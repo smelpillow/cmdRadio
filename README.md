@@ -42,4 +42,4 @@ El script lee los ficheros .m3u que estan en la carpeta .\InternetRadio, los mue
 
 Hay varias cosas que podemos personalizar dentro del script, pero principalmente lo que mas nos interesará es el mantenimiento de los ficheros .m3u, el listado se ha obtenido de este otro proyecto GitHub (https://github.com/junguler/m3u-radio-music-playlists), este proyecto tiene muchisimos enlaces de radios, pero personalmente he creado una pequeña selección.
 
-En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\InternetRadio", hay podemos modificar, añadir o quitar los ficheros que nos interesen.
+En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\InternetRadio", ahí podemos modificar, añadir o quitar los ficheros de las listas.
