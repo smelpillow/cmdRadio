@@ -47,11 +47,13 @@ do {
         Pause
     }
     elseif ($answer -eq "r" -or $answer -eq "R") {
-        $randomFile = Get-Random -InputObject $m3uFiles
-        $selectedFile = Join-Path $musicFolder $randomFile
-        Write-Host "Reproduciendo una estación al azar: $($randomFile)" -ForegroundColor Green
-        mpv --shuffle $selectedFile
-        Pause
+        do {
+            $randomFile = Get-Random -InputObject $m3uFiles
+            $selectedFile = Join-Path $musicFolder $randomFile
+            Write-Host "Reproduciendo una estación al azar: $($randomFile)" -ForegroundColor Green
+            mpv --shuffle $selectedFile
+            $repeat = Read-Host "¿Quieres reproducir otra estación al azar? (S/N)"
+        } while ($repeat -eq "s" -or $repeat -eq "S")
     }
     elseif ($answer -eq "q" -or $answer -eq "Q") {
         Write-Host "Saliendo del script..." -ForegroundColor Green
