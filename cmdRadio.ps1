@@ -53,6 +53,7 @@ do {
             Write-Host "Reproduciendo una estación al azar: $($randomFile)" -ForegroundColor Green
             mpv --shuffle $selectedFile
             $repeat = Read-Host "¿Quieres reproducir otra estación al azar? (S/N)"
+            $repeat = 's'
         } while ($repeat -eq "s" -or $repeat -eq "S")
     }
     elseif ($answer -eq "q" -or $answer -eq "Q") {
