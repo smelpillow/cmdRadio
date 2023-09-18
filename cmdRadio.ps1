@@ -8,8 +8,10 @@ function Test-MpvInstallation {
 
     if (-not $mpvPath) {
         Write-Host "¡Advertencia! mpv no está instalado o no se encuentra en el PATH del sistema." -ForegroundColor Yellow
-        $response = Read-Host "¿Deseas continuar sin mpv? (S/N)"
-        if ($response -ne "S" -and $response -ne "s") {
+        $response = Read-Host "¿Deseas continuar sin mpv? (S/N) [S]"
+        if ($response -eq "" -or $response -eq "S" -or $response -eq "s") {
+            return
+        } else {
             Write-Host "Saliendo del script..." -ForegroundColor Green
             exit
         }
@@ -52,9 +54,13 @@ do {
             $selectedFile = Join-Path $musicFolder $randomFile
             Write-Host "Reproduciendo una estación al azar: $($randomFile)" -ForegroundColor Green
             mpv --shuffle $selectedFile
-            $repeat = Read-Host "¿Quieres reproducir otra estación al azar? (S/N)"
-            $repeat = 's'
-        } while ($repeat -eq "s" -or $repeat -eq "S")
+            $repeat = Read-Host "¿Quieres reproducir otra estación al azar? (S/N) [S]"
+            if ($repeat -eq "" -or $repeat -eq "S" -or $repeat -eq "s") {
+                $repeat = $true
+            } else {
+                $repeat = $false
+            }
+        } while ($repeat)
     }
     elseif ($answer -eq "q" -or $answer -eq "Q") {
         Write-Host "Saliendo del script..." -ForegroundColor Green
