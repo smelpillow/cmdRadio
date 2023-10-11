@@ -47,3 +47,5 @@ En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\I
 ## Configuración de MPV
 
 Se añaden ficheros de configuración de Mpv, para que se pueda modificar la configuración y que sea una configuración específica para el script.
+
+Se añade linea "watch-later-directory=~/.mpv/watch_later" en el fichero de configuración de MPV para que los archivos temporales no se guarden dentro del proyecto.
