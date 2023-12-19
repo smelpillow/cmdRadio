@@ -1,6 +1,6 @@
-º#!/bin/bash
+#!/bin/bash
 
-musicFolder="/GitHub/cmdRadio/InternetRadio"
+musicFolder="/mnt/c/GitHub/cmdRadio/InternetRadio"
 m3uFiles=($(find "$musicFolder" -type f -name "*.m3u" -exec basename {} \;))
 
 # Verifica si mpv está instalado

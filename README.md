@@ -4,27 +4,41 @@ Bienvenido a este proyecto GitHub que basícamente se trata de un script que uti
 
 ## Requisitos
 
-El script requiere de la instalación de Mpv https://mpv.io/installation/ que recomiendo instalar mediante Chocolatey https://chocolatey.org/install. Tambien necesitamos tener generado un pefil de Powershell para poder añadir la función, ademas de reconfigurar la ejecución de scripts en powershell.
+### Windows
+
+El script requiere de la instalación de Mpv <https://mpv.io/installation/> que recomiendo instalar mediante Chocolatey <https://chocolatey.org/install>. Tambien necesitamos tener generado un pefil de Powershell para poder añadir la función, ademas de reconfigurar la ejecución de scripts en powershell.
 
 Recomiendo seguir los siguientes pasos:
 
 1. Instalar Chocolatey.
 2. Instalar MPV.
 3. Modificar la ejecución de scripts.
+
     ```Powershell
     Set-ExecutionPolicy Bypass -Scope LocalMachine
     ```
+
 4. Crear perfil de powershell.
+
     ```powershell
     if (!(Test-Path -Path $PROFILE)) {
         New-Item -ItemType File -Path $PROFILE -Force
     }
     ```
+
 5. Añadir la funcion al perfil.
+
     ```powershell
     Add-Content -Path $PROFILE -Value "function cmdRadio {C:\Github\cmdRadio\cmdRadio.ps1}"
     ```
+
 6. Reinicar el terminal para que se apliquen los cambios.
+
+### Linux
+
+La instalación de MPV en Linux Ubuntu, se realiza de la siguiente manera.
+
+<https://snapcraft.io/install/mpv/ubuntu>
 
 ## Instalación
 
@@ -40,7 +54,7 @@ El script lee los ficheros .m3u que estan en la carpeta .\InternetRadio, los mue
 
 ## Personalización
 
-Hay varias cosas que podemos personalizar dentro del script, pero principalmente lo que mas nos interesará es el mantenimiento de los ficheros .m3u, el listado se ha obtenido de este otro proyecto GitHub (https://github.com/junguler/m3u-radio-music-playlists), este proyecto tiene muchisimos enlaces de radios, pero personalmente he creado una pequeña selección.
+Hay varias cosas que podemos personalizar dentro del script, pero principalmente lo que mas nos interesará es el mantenimiento de los ficheros .m3u, el listado se ha obtenido de este otro proyecto GitHub (<https://github.com/junguler/m3u-radio-music-playlists>), este proyecto tiene muchisimos enlaces de radios, pero personalmente he creado una pequeña selección.
 
 En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\InternetRadio", ahí podemos modificar, añadir o quitar los ficheros de las listas.
 
