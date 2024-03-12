@@ -1,0 +1,9 @@
+{
+    "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -file \"C:\\GitHub\\cmdRadio\\cmdRadio.ps1\"",
+    "guid": "{3b626ed8-a481-47f7-8a9f-87e58503992d}",
+    "hidden": false,
+    "icon": "C:\\GitHub\\cmdRadio\\cmdRadio_ico.png",
+    "name": "cmdRadio",
+    "startingDirectory": "%USERPROFILE%",
+    "tabTitle": "cmdRadio"
+}

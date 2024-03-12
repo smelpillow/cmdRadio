@@ -58,6 +58,10 @@ Hay varias cosas que podemos personalizar dentro del script, pero principalmente
 
 En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\InternetRadio", ahí podemos modificar, añadir o quitar los ficheros de las listas.
 
+## Configuración Windows Terminal
+
+Se añade fichero settings.json con los datos para añadir una pestaña personalizada en el Terminal,se añade fichero .png con icono para el Terminal.
+
 ## Configuración de MPV
 
 Se añaden ficheros de configuración de Mpv, para que se pueda modificar la configuración y que sea una configuración específica para el script.
