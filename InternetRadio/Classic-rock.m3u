@@ -2,25 +2,41 @@
 #EXTINF:-1,_Radio Energy Classic (Italy)
 https://gmusto3.radioca.st/stream
 #EXTINF:-1,- 0 N - 70s on Radio
+https://0n-70s.radionetz.de/0n-70s.aac
+#EXTINF:-1,- 0 N - 70s on Radio
 https://0n-70s.radionetz.de/0n-70s.mp3
 #EXTINF:-1,- 0 N - Classic Rock on Radio
 https://0n-classicrock.radionetz.de/0n-classicrock.mp3
+#EXTINF:-1,- 0 N - Classic Rock on Radio
+https://0n-classicrock.radionetz.de/0n-classicrock.aac
 #EXTINF:-1,- 0 N - Evergreens on Radio
 https://0n-evergreens.radionetz.de/0n-evergreens.mp3
 #EXTINF:-1,- 0 N - Jukebox on Radio
 https://0n-jukebox.radionetz.de/0n-jukebox.mp3
+#EXTINF:-1,- 0 N - Jukebox on Radio
+https://0n-jukebox.radionetz.de/0n-jukebox.aac
+#EXTINF:-1,- 0 N - Rock on Radio
+https://0n-rock.radionetz.de/0n-rock.mp3
 #EXTINF:-1,- 0 N - Rock on Radio
 https://0n-rock.radionetz.de/0n-rock.aac
 #EXTINF:-1,- 1 A - 70er von 1A Radio
 https://1a-70er.radionetz.de/1a-70er.aac
+#EXTINF:-1,- 1 A - 70er von 1A Radio
+https://1a-70er.radionetz.de/1a-70er.mp3
 #EXTINF:-1,- 1 A - Classic Rock von 1A Radio
 https://1a-classicrock.radionetz.de/1a-classicrock.aac
+#EXTINF:-1,- 1 A - Classic Rock von 1A Radio
+https://1a-classicrock.radionetz.de/1a-classicrock.mp3
+#EXTINF:-1,- 1 A - Rock von 1A Radio
+https://1a-rock.radionetz.de/1a-rock.aac
 #EXTINF:-1,- 1 A - Rock von 1A Radio
 https://1a-rock.radionetz.de/1a-rock.mp3
 #EXTINF:-1,..87,5!. Nantes
 https://listen.radioking.com/radio/15130/stream/28217
 #EXTINF:-1,[laut.fm] Freakquency
 http://stream.laut.fm/freakquency.pls
+#EXTINF:-1,[laut.fm] Freakquency
+https://stream.laut.fm/freakquency.pls
 #EXTINF:-1,0nlineradio 80s ROCK
 https://stream.0nlineradio.com/80s-rock?ref=radiobrowser
 #EXTINF:-1,0nlineradio CLASSIC ROCK
@@ -38,7 +54,7 @@ https://maggie.torontocast.com:2020/stream/100greatestliverock
 #EXTINF:-1,100 XR - The Net's #1 Rock Station!
 https://100xr.com/listen/100xr-he-aac.pls
 #EXTINF:-1,100.3 big
-https://stream.revma.ihrhls.com/zc2505/hls.m3u8?streamid=2505&zip=20779&at=0&birthYear=null&clientType=web&fb_broadcast=0&host=webapp.US&init_id=8169&modTime=1625981235400&pname=OrganicWeb&profileid=1563075259&territory=US&uid=e12ed9af-25e3-44c8-8473-18fe98723481&age=null&gender=null&aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=1625981235&terminalid=159&companionAds=true&playedFrom=6&us_privacy=1-N-&callLetters=WBIG-FM&devicename=web-desktop&stationid=2505&dist=iheart&aw_0_1st.ccaud=
+https://stream.revma.ihrhls.com/zc2505/hls.m3u8?streamid=2505\u0026zip=20779\u0026at=0\u0026birthYear=null\u0026clientType=web\u0026fb_broadcast=0\u0026host=webapp.US\u0026init_id=8169\u0026modTime=1625981235400\u0026pname=OrganicWeb\u0026profileid=1563075259\u0026territory=US\u0026uid=e12ed9af-25e3-44c8-8473-18fe98723481\u0026age=null\u0026gender=null\u0026aw_0_1st.playerid=iHeartRadioWebPlayer\u0026aw_0_1st.skey=1625981235\u0026terminalid=159\u0026companionAds=true\u0026playedFrom=6\u0026us_privacy=1-N-\u0026callLetters=WBIG-FM\u0026devicename=web-desktop\u0026stationid=2505\u0026dist=iheart\u0026aw_0_1st.ccaud=
 #EXTINF:-1,100.5 The Fox
 https://stream.revma.ihrhls.com/zc2938/hls.m3u8
 #EXTINF:-1,100.7 KKRQ The Fox
@@ -76,7 +92,7 @@ https://ice7.securenetsystems.net/WLKZ
 #EXTINF:-1,105.7 The Brew
 https://stream.revma.ihrhls.com/zc2946
 #EXTINF:-1,106,7 Rockklassiker
-http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=rockklassiker_instream_se_mp3
+http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB\u0026i=rockklassiker_instream_se_mp3
 #EXTINF:-1,106.1 CHEZ - The Capital of Rock
 https://rogers-hls.leanstream.co/rogers/ott1061.stream/48k/playlist.m3u8
 #EXTINF:-1,107.5 Frank
@@ -118,7 +134,7 @@ https://ice41.securenetsystems.net/WSQV
 #EXTINF:-1,92.5 The Fox
 https://playerservices.streamtheworld.com/api/livestream-redirect/WOFXFMAAC.aac
 #EXTINF:-1,92.9 The Grand
-https://24443.live.streamtheworld.com/CHTGFMAAC.aac?pname=StandardPlayerV4&pversion=4.19.2-042&dist=triton-web&tdsdk=js-2.9&swm=false&banners=300x250%2C728x90&burst-time=15&sbmid=ccb83d50-ac55-4f97-989e-6c170802ff9b
+https://24443.live.streamtheworld.com/CHTGFMAAC.aac?pname=StandardPlayerV4\u0026pversion=4.19.2-042\u0026dist=triton-web\u0026tdsdk=js-2.9\u0026swm=false\u0026banners=300x250%2C728x90\u0026burst-time=15\u0026sbmid=ccb83d50-ac55-4f97-989e-6c170802ff9b
 #EXTINF:-1,94.1 KRNA
 https://live.wostreaming.net/direct/townsquare-krnafmaac-ibc3
 #EXTINF:-1,94.3 WQCM
@@ -157,6 +173,8 @@ https://ice64.securenetsystems.net/WXOFFM
 https://playerservices.streamtheworld.com/api/livestream-redirect/KKGLFMAAC.aac
 #EXTINF:-1,97.5 WONE Akron's Home of Rock && Roll
 http://playerservices.streamtheworld.com/pls/WONEFMAAC.pls
+#EXTINF:-1,97.7 The Bay
+https://www.streamvortex.com:8444/s/11030
 #EXTINF:-1,97.7 The Bay
 https://www.streamvortex.com:8444/s/11030
 #EXTINF:-1,98.1 KKFM
@@ -228,7 +246,7 @@ http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_vlo
 #EXTINF:-1,Best FM 103.5
 http://radios-cr.cdn.nedmedia.io/radios/bestfm.m3u8
 #EXTINF:-1,Best Net Radio - Classic Rock
-http://bigrradio.cdnstream1.com/5155_128?listenerid=43889c39c8ecf4f87725056b0d737597&cb=177794.mp3
+http://bigrradio.cdnstream1.com/5155_128?listenerid=43889c39c8ecf4f87725056b0d737597\u0026cb=177794.mp3
 #EXTINF:-1,Best Of Rock Rádió
 https://stream.phost.hu:8000/bestofrock_mq
 #EXTINF:-1,Best Of Rock Rádió HQ
@@ -248,11 +266,11 @@ https://live.wostreaming.net/manifest/radioonebuffalo-weckamaac-ibc3
 #EXTINF:-1,Bikers Inner Circle
 http://streaming.radio.co/s60f7d4c8f/listen
 #EXTINF:-1,BJ105 - Orlando's Legendary Hit Music Station
-https://samcloud.spacial.com/api/listen?sid=127697&rid=268061
+https://samcloud.spacial.com/api/listen?sid=127697\u0026rid=268061
 #EXTINF:-1,Blown
 http://crucialvelocity.ca/blown128.m3u
 #EXTINF:-1,BOLLOCKS Rock && Metal Radio
-https://s44.myradiostream.com/6588/?type=http&nocache=1571393528?0.9592127816686777
+https://s44.myradiostream.com/6588/?type=http\u0026nocache=1571393528?0.9592127816686777
 #EXTINF:-1,Bruce Classic Rock
 http://streamingv2.shoutcast.com/bruce-classic-rock
 #EXTINF:-1,Cámara FM (HJUC 95.9 MHz FM, Medellín) Cámara de Comercio de Medellín
@@ -329,6 +347,8 @@ https://live.wostreaming.net/manifest/townsquare-kftefmaac-ibc3
 http://stream.wlmm.dk/classicrockkbhmp3
 #EXTINF:-1,Classic Rock Radio
 http://internetradio.salue.de:8000/classicrock.aac
+#EXTINF:-1,Classic Rock Radio
+http://internetradio.salue.de:8000/classicrock.mp3
 #EXTINF:-1,Classic Rock Universal - Online - Grupo Radio Centro - Ciudad de México
 https://playerservices.streamtheworld.com/api/livestream-redirect/XHNZ_COMAAC.aac
 #EXTINF:-1,Classical Rock
@@ -351,6 +371,8 @@ https://live.wostreaming.net/direct/agmedia28-kiotfmaac-ibc3
 https://shoutcast.christianrock.net/stream/9/
 #EXTINF:-1,CRnet Classic Rock (32)
 https://shoutcast.christianrock.net/stream/10/
+#EXTINF:-1,Cruisin Radio,Classic Rock,Oldies,60's,70's,80's etc.
+http://s11.myradiostream.com:7622/
 #EXTINF:-1,Cruisin Radio,Classic Rock,Oldies,60's,70's,80's etc.
 http://s11.myradiostream.com:7622/
 #EXTINF:-1,David Bowie on Dash
@@ -381,6 +403,8 @@ http://www.easyrockparadise.com:8300/
 https://cast.egofm.de/egofmchillout.mp3
 #EXTINF:-1,egoFM Fame
 http://cast.egofm.de/egofmhalloffame.mp3?ar-distributor=ffa0
+#EXTINF:-1,egoFM Fame
+https://cast.egofm.de/egofmhalloffame.mp3
 #EXTINF:-1,egoFM Jazz
 https://cast.egofm.de/egofmjazz.mp3
 #EXTINF:-1,EKR - European Klassik Rock
@@ -526,7 +550,9 @@ http://stream.klassikradio.de/rockclassic/mp3-128/www.klassikradio.de/
 #EXTINF:-1,KLKK-FM 103.7 North Iowa's Classic Rock, Clear Lake, Iowa
 http://ice6.securenetsystems.net/KLKK
 #EXTINF:-1,KNCE 93.5 True Taos Radio
-http://live1.brownrice.com:8010/?type=http&nocache=52040
+http://live1.brownrice.com:8010/?type=http\u0026nocache=52040
+#EXTINF:-1,KNCE 93.5 True Taos Radio
+https://shoutcast.brownrice.com:8002/stream
 #EXTINF:-1,KOMA 92.5 "Oklahoma's Greatest Hits" Okahoma City, OK
 http://provisioning.streamtheworld.com/pls/KOMAFMAAC.pls
 #EXTINF:-1,KONG Monster Rock
@@ -597,6 +623,8 @@ https://stream.liferadio.at/clrock/mp3-192/stream.liferadio.at/
 http://stream.laut.fm/lkwfreunde.m3u
 #EXTINF:-1,Los 40 Classic
 https://20723.live.streamtheworld.com/LOS40_CLASSICAAC.aac?
+#EXTINF:-1,Los 40 Classic
+https://20723.live.streamtheworld.com/LOS40_CLASSIC_SC
 #EXTINF:-1,LOS40 Classic
 https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CLASSIC.mp3
 #EXTINF:-1,Lübeck FM
@@ -682,7 +710,7 @@ https://radio5.domint.net:8166/stream
 #EXTINF:-1,Paradise City from Guns N Roses
 http://ice55.securenetsystems.net/DASH20
 #EXTINF:-1,Phonic FM
-http://stream.sentiaglobal.com:8003/main?=&&___cb=914156402529906
+http://stream.sentiaglobal.com:8003/main?=\u0026\u0026___cb=914156402529906
 #EXTINF:-1,Pinguin Classics
 http://pc192.pinguinradio.com/listen.pls
 #EXTINF:-1,Pirate Rock  Västkustens bästa rock
@@ -691,6 +719,12 @@ http://stream.piraterock.se:8101/webradio
 http://peridot.streamguys.com:7520/sgplayer-mp3
 #EXTINF:-1,Planet Rock
 https://stream-mz.planetradio.co.uk/planetrock.aac
+#EXTINF:-1,Planet Rock
+http://edge-bauerall-01-gos2.sharp-stream.com/planetrock.mp3?aw_0_1st.skey=1652375517
+#EXTINF:-1,Planet Rock
+http://edge-bauerall-01-gos2.sharp-stream.com/planetrock.mp3?aw_0_1st.skey=1652375517
+#EXTINF:-1,Polskie Radio Kierowców
+http://stream3.polskieradio.pl:8918/
 #EXTINF:-1,Polskie Radio Kierowców
 http://stream3.polskieradio.pl:8918/
 #EXTINF:-1,Poptarisznya Blues24
@@ -726,13 +760,13 @@ https://icecast2.play.cz/beat128aac
 #EXTINF:-1,Rádio Bla Rock
 https://s12.maxcast.com.br:8086/live
 #EXTINF:-1,Radio Bob Classic Rock
-http://bob.hoerradar.de/radiobob-classicrock-mp3-mq?sABC=5n437pp3%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23zrqvncynlre&amsparams=playerid:mediaplayerskey:1514372291
+http://bob.hoerradar.de/radiobob-classicrock-mp3-mq?sABC=5n437pp3%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23zrqvncynlre\u0026amsparams=playerid:mediaplayerskey:1514372291
 #EXTINF:-1,RADIO BOB! BOBs Queen
 http://streams.radiobob.de/bob-queen/mp3-192/homepage/
 #EXTINF:-1,Radio BOB! Classic Rock
 http://streams.radiobob.de/bob-classicrock/mp3-128/mediaplayer
 #EXTINF:-1,RADIO BOB! Classic Rock
-http://bob.hoerradar.de/radiobob-classicrock-mp3-mq?sABC=61s7rsno%230%2348qrn082p9447n3483o68po3qp43195r%23zrqvncynlre&amsparams=playerid:mediaplayerskey:1643638699
+http://bob.hoerradar.de/radiobob-classicrock-mp3-mq?sABC=61s7rsno%230%2348qrn082p9447n3483o68po3qp43195r%23zrqvncynlre\u0026amsparams=playerid:mediaplayerskey:1643638699
 #EXTINF:-1,Radio Brent
 https://patmos.cdnstream.com/proxy/radiobre/?mp=/stream
 #EXTINF:-1,Radio Buon Consiglio
@@ -741,6 +775,8 @@ http://streaming.radiobuonconsiglio.it:8000/
 http://capital-webradio-02-hds.akamai.media.kataweb.it/i/WebRadio2_1@117624/master.m3u8
 #EXTINF:-1,Radio Caroline
 http://sc6.radiocaroline.net:8040/stream.mp3
+#EXTINF:-1,Radio Caroline
+http://78.129.202.200:8040/
 #EXTINF:-1,Radio Caroline (48k AAC)
 http://sc5.radiocaroline.net:8010/
 #EXTINF:-1,Radio Caroline AAC 96 kbps
@@ -763,6 +799,8 @@ https://radio-flensburg.de/rfl.m3u
 https://brapostreaming.com.br/radio/8000/radio.mp3
 #EXTINF:-1,Radio Futura 91.1
 http://radios-mp3-uy.cdn.nedmedia.io/uy-futura.mp3
+#EXTINF:-1,Radio Futura 91.1
+https://cdn.mediatiquestream.com/radiosuy/futura.stream/playlist.m3u8
 #EXTINF:-1,Radio Gong 97.1
 https://frontend.streamonkey.net/fhn-gong971/stream/mp3
 #EXTINF:-1,Radio Guerrilla
@@ -773,6 +811,8 @@ https://servidor39.brlogic.com:8624/live
 https://sonic.dattalive.com/8192/stream
 #EXTINF:-1,Radio JR 88.7 FM - Arequipa
 http://99.198.110.162:8038/
+#EXTINF:-1,Rádio Kiss Fm São Paulo
+http://cloud2.cdnseguro.com:23538/
 #EXTINF:-1,Radio Kolobrzeg
 http://graj.radiokolobrzeg.pl:8000/
 #EXTINF:-1,Radio KPTV
@@ -785,6 +825,8 @@ http://stream.laut.fm/m1
 http://nabamp0.latvijasradio.lv:8016/
 #EXTINF:-1,Radio No9
 http://www.radio-no9.de:4000/stream.mp3
+#EXTINF:-1,Radio No9
+http://www.radio-no9.de:4000/listen.pls
 #EXTINF:-1,Radio Northern Star
 http://5866.cloudrad.io:8018/northernstar.mp3
 #EXTINF:-1,RADIO NUEVO S. CHILOE  FM
@@ -812,7 +854,7 @@ http://scast.regenbogen.de/rr-classicrock-128-mp3
 #EXTINF:-1,Radio Regenbogen Classic Rock (AAC)
 http://scast.regenbogen.de/rr-classicrock-128-aac
 #EXTINF:-1,Radio RMF24.pl
-https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false&aw_0_req.userConsentV2=&aw_0_1st.playerid=RMF_Player_JS_P&aw_0_1st.rmf_disable_preroll=true
+https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false\u0026aw_0_req.userConsentV2=\u0026aw_0_1st.playerid=RMF_Player_JS_P\u0026aw_0_1st.rmf_disable_preroll=true
 #EXTINF:-1,Rádio Rock - 89,1 FM
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP.aac?dist=site-89fm
 #EXTINF:-1,Radio Rock Brasil
@@ -940,6 +982,8 @@ http://zastream.kagiso.io/rockon_high
 #EXTINF:-1,Rock radio
 https://cast2.my-control-panel.com/proxy/vladas/stream
 #EXTINF:-1,Rock Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_RADIO_128.mp3
+#EXTINF:-1,Rock Radio
 http://stream3.radiocenter.si:9032/
 #EXTINF:-1,Rock Radio and More
 https://s1.radioforge.com:5858/stream
@@ -983,6 +1027,8 @@ https://streams.rpr1.de/rpr-80errock-128-mp3?usid=0-0-H-M-D-60
 https://streams.rpr1.de/rpr-90errock-128-mp3?usid=0-0-H-M-D-60
 #EXTINF:-1,RPR1. Classic Rock
 http://streams.rpr1.de/rpr-rock-128-aac?usid=0-0-H-A-D-30
+#EXTINF:-1,RPR1. Classic Rock
+http://streams.rpr1.de/rpr-rock-128-mp3?usid=0-0-H-A-D-30
 #EXTINF:-1,RSTLSS
 https://stream.radiosolution.fr/rstlss.mp3
 #EXTINF:-1,Rte66radio
@@ -996,6 +1042,8 @@ https://s5.citrus3.com:8156/stream
 #EXTINF:-1,Só Cacarecos - Classic Rock
 http://sokakarecos.ddns.net:9030/rock128
 #EXTINF:-1,Soft Classic Rock
+http://64.71.133.122:8000/
+#EXTINF:-1,Soft Classic Rock Radio
 http://64.71.133.122:8000/
 #EXTINF:-1,Soft Rock Radio
 http://softrock-ice.purestream.net/softrock.mp3
@@ -1021,10 +1069,14 @@ http://www.sqrr.de/listen.pls
 https://playerservices.streamtheworld.com/api/livestream-redirect/STEREOREYAAC.aac
 #EXTINF:-1,Stingray Classic Rock
 https://ott-linear-channels.stingray.com/hls/stirr/101.m3u8
+#EXTINF:-1,Stone FM
+http://bayern.streampanel.net:10934/stream
 #EXTINF:-1,Stone Radio
 http://eu4.fastcast4u.com:5248/stream.mp3
 #EXTINF:-1,STR - Só Toca Rock
 http://45.43.200.18:7134/
+#EXTINF:-1,STR - Só Toca Rock
+https://player.srvstm.com/player/7134/winamp.pls
 #EXTINF:-1,Studio - 93.1 FM - XHMZT-FM - Grupo Siete - Mazatlán, SI
 http://radio.spiritmedia.mx:8000/xhmzt
 #EXTINF:-1,Südstadt Radio
@@ -1034,7 +1086,7 @@ https://diffusion.lafrap.fr/sun-rock.mp3
 #EXTINF:-1,Sunradio - Best international Music
 http://www.sunradio.ch/livestream.m3u
 #EXTINF:-1,Super FM
-http://95.217.75.38:9962/&13202692901&duration=99999&id=scplayer&autostart=true
+http://95.217.75.38:9962/\u002613202692901\u0026duration=99999\u0026id=scplayer\u0026autostart=true
 #EXTINF:-1,Sweet FM 97.1
 http://37.59.28.208:8600/
 #EXTINF:-1,Sweet FM 97.1MHz Community Radio Burdekin Queensland
@@ -1052,7 +1104,7 @@ https://blastozoicera-stream.theblast.fm/128
 #EXTINF:-1,The Colorful Radio
 http://91.121.59.45:8244/stream
 #EXTINF:-1,The Generator
-https://s1.myradiostream.com/:14268/?type=http&nocache=1608640718?0.7458407789862892
+https://s1.myradiostream.com/:14268/?type=http\u0026nocache=1608640718?0.7458407789862892
 #EXTINF:-1,The Hippo CLASSIC ROCK! KHIP-FM 104.3 MHz
 https://ice9.securenetsystems.net/KHIP
 #EXTINF:-1,The Lynx Classic Rock
@@ -1090,7 +1142,7 @@ https://wz4liw.scahw.com.au/live/4too_128.stream/playlist.m3u8
 #EXTINF:-1,True Progressive Radio
 http://stream.trueprogressiveradio.com:8000/listen.pls
 #EXTINF:-1,Universal y la Octava 88.1
-http://18123.live.streamtheworld.com/XHEPR_FMAAC.aac?pname=StandardPlayerV4&pversion=4.19.2-025&csegid=888&dist=triton-web&tdsdk=js-2.9&banners=none&sbmid=6c68cc61-3756-4f54-c739-7986e4864c68
+http://18123.live.streamtheworld.com/XHEPR_FMAAC.aac?pname=StandardPlayerV4\u0026pversion=4.19.2-025\u0026csegid=888\u0026dist=triton-web\u0026tdsdk=js-2.9\u0026banners=none\u0026sbmid=6c68cc61-3756-4f54-c739-7986e4864c68
 #EXTINF:-1,Universe Radio
 http://www.universeradio.nl/playlist/radio.pls
 #EXTINF:-1,Uturn Radio - Classic Rock

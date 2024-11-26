@@ -7,12 +7,18 @@ https://gmusto3.radioca.st/stream
 https://gmusto.radioca.st/mp3
 #EXTINF:-1,- 0 N - Classic Rock on Radio
 https://0n-classicrock.radionetz.de/0n-classicrock.mp3
+#EXTINF:-1,- 0 N - Classic Rock on Radio
+https://0n-classicrock.radionetz.de/0n-classicrock.aac
 #EXTINF:-1,- 0 N - Evergreens on Radio
 https://0n-evergreens.radionetz.de/0n-evergreens.mp3
 #EXTINF:-1,- 0 N - Jukebox on Radio
 https://0n-jukebox.radionetz.de/0n-jukebox.mp3
+#EXTINF:-1,- 0 N - Jukebox on Radio
+https://0n-jukebox.radionetz.de/0n-jukebox.aac
 #EXTINF:-1,- 1 A - Classic Rock von 1A Radio
 https://1a-classicrock.radionetz.de/1a-classicrock.mp3
+#EXTINF:-1,- 1 A - Classic Rock von 1A Radio
+https://1a-classicrock.radionetz.de/1a-classicrock.aac
 #EXTINF:-1,#80s HITS
 http://listen.radionomy.com/80-exits
 #EXTINF:-1,0nlineradio BEETHOVEN
@@ -79,12 +85,14 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/ACE_4BHAAC.aac
 https://21423.live.streamtheworld.com/4BHAAC.aac
 #EXTINF:-1,4KQ 693
 https://ais-arn.streamguys1.com/au_009/playlist.m3u8
+#EXTINF:-1,4KQ 693
+https://ais-arn.streamguys1.com/au_009_icy
 #EXTINF:-1,70/80 Non Stop
 http://shoutcast3.streamingmedia.it:3038/
 #EXTINF:-1,92.9 The Eagle
-https://live.wostreaming.net/direct/alphacorporate-ktglfmaac-ibc4&source=website
+https://live.wostreaming.net/direct/alphacorporate-ktglfmaac-ibc4\u0026source=website
 #EXTINF:-1,92.9 The Grand
-https://24443.live.streamtheworld.com/CHTGFMAAC.aac?pname=StandardPlayerV4&pversion=4.19.2-042&dist=triton-web&tdsdk=js-2.9&swm=false&banners=300x250%2C728x90&burst-time=15&sbmid=ccb83d50-ac55-4f97-989e-6c170802ff9b
+https://24443.live.streamtheworld.com/CHTGFMAAC.aac?pname=StandardPlayerV4\u0026pversion=4.19.2-042\u0026dist=triton-web\u0026tdsdk=js-2.9\u0026swm=false\u0026banners=300x250%2C728x90\u0026burst-time=15\u0026sbmid=ccb83d50-ac55-4f97-989e-6c170802ff9b
 #EXTINF:-1,93.3 WBZD Classic Hits
 https://playerservices.streamtheworld.com/api/livestream-redirect/WBZDFMAAC.aac
 #EXTINF:-1,94.5 Bay FM
@@ -185,6 +193,8 @@ http://bigrradio.cdnstream1.com/5198_128
 https://ss1.audiorama.com.mx:6594/stream
 #EXTINF:-1,Buenisiima (Mexicali) - 850 AM - XEZF-AM - Grupo Audiorama Comunicaciones - Mexicali, BC
 https://ss1.audiorama.com.mx:6594/
+#EXTINF:-1,Buenisiima (Mexicali) - 850 AM - XEZF-AM - Grupo Audiorama Comunicaciones - Mexicali, BC
+https://ss1.audiorama.com.mx:6594/
 #EXTINF:-1,Central Coast Radio.com
 https://s4.radio.co/scf2280c01/listen
 #EXTINF:-1,CFGQ 107.3 "Q107" Calgary, AB
@@ -279,6 +289,8 @@ https://radiopanther.radiolebowski.com/play
 https://classichitsradio.streamingmedia.it/play
 #EXTINF:-1,Classic Vinyl HD
 https://walmradio.com:8443/classic
+#EXTINF:-1,Classic Vinyl HD
+https://walmradio.com:8443/classic
 #EXTINF:-1,Coast 101.1 FM St. Johns, NL
 https://canada1.reliastream.com/proxy/coastbr1?mp=/stream
 #EXTINF:-1,Cool 102
@@ -321,6 +333,8 @@ https://stream.zeno.fm/snb2awuv538uv
 https://secure.radiorama.mx:2077/
 #EXTINF:-1,Éxtasis Digital (Guadalajara) - 105.9 FM - XHQJ-FM - Radiorama - Guadalajara, JC
 https://stream.zeno.fm/3dnrg7m1qa0uv
+#EXTINF:-1,Éxtasis Digital (Guadalajara) - 105.9 FM - XHQJ-FM - Radiorama - Guadalajara, JC
+http://192.99.16.17:3414/
 #EXTINF:-1,Éxtasis Digital (León) - 95.9 FM - XHGTO-FM - Radiorama - León, GT
 http://sts.pergom.mx/xhgto
 #EXTINF:-1,Éxtasis Digital (León) - 95.9 FM / 590 AM - XHGTO-FM / XEGTO-AM - Radiorama - León, Guanajuato
@@ -359,6 +373,8 @@ https://sr15.inmystream.it:2020/tunein/gammaradio/stream/pls
 https://media-ssl.musicradio.com/GoldMP3
 #EXTINF:-1,Gold 104.3
 https://ais-arn.streamguys1.com/au_004/playlist.m3u8
+#EXTINF:-1,Gold 104.3
+https://ais-arn.streamguys1.com/au_004_icy
 #EXTINF:-1,Gold AM 1548 London
 http://media-ice.musicradio.com/GoldMP3
 #EXTINF:-1,Gold AM nz
@@ -466,7 +482,7 @@ http://provisioning.streamtheworld.com/pls/KOLAFMAAC.pls
 #EXTINF:-1,KOOL 101.7
 http://173.193.205.96:7078/stream
 #EXTINF:-1,KOOL 97.3
-https://live.wostreaming.net/direct/alphacorporate-keagfmaac-imc4&source=website
+https://live.wostreaming.net/direct/alphacorporate-keagfmaac-imc4\u0026source=website
 #EXTINF:-1,KRASSE WEIHNACHTEN by rautemusik (rm.fm)
 https://weihnachten-high.rautemusik.fm/?ref=radiobrowser
 #EXTINF:-1,KRDZ 1440 AM
@@ -489,6 +505,8 @@ http://provisioning.streamtheworld.com/pls/KWICFMAAC.pls
 http://stream.kwso.org:8000/stream
 #EXTINF:-1,KX Classics
 http://stream.kxclassikx.nl/
+#EXTINF:-1,KX Classics
+https://mcp-1.streampanel.nl:8020/kxclassics_mp3
 #EXTINF:-1,KXKL 105.1 "Kool 105" Denver, CO
 http://provisioning.streamtheworld.com/pls/KXKLFMAAC.pls
 #EXTINF:-1,La Dorada (Córdoba) - 107.5 FM - XHKG-FM - NTR Medios de Comunicación - Córdoba, VE
@@ -514,7 +532,7 @@ https://livestream.mediaworks.nz/radio_origin/magic_128kbps/playlist.m3u8
 #EXTINF:-1,Mallorca Sunshine Radio
 https://stream.inselradio.com/high.sunshine.mp3
 #EXTINF:-1,Mas Radio (Nogales) - 107.9 FM - KCKO-FM - Mas Medios Nogales - Nogales, Sonora
-https://s5.mexside.net:9079/stream?type=http&nocache=3
+https://s5.mexside.net:9079/stream?type=http\u0026nocache=3
 #EXTINF:-1,Mellow Magic
 http://live-bauer-mz.sharp-stream.com/magicmellow.mp3
 #EXTINF:-1,Metro 2 Radio
@@ -610,11 +628,13 @@ http://icy.unitedradio.it/105Story.mp3
 #EXTINF:-1,Radio 24 - Greatest Hits
 http://icecast.radio24.ch/24sn-mp3-srp
 #EXTINF:-1,Radio 31 2000s
-http://2000er.stream.laut.fm/2000er?t302=2018-03-11_09-46-13&uuid=4aedf967-8bec-4e7f-9eff-f44434694924
+http://2000er.stream.laut.fm/2000er?t302=2018-03-11_09-46-13\u0026uuid=4aedf967-8bec-4e7f-9eff-f44434694924
 #EXTINF:-1,Radio 4CC - AM 927 - Gladstone, QLD
 http://playerservices.streamtheworld.com/api/livestream-redirect/GLA_4CCAAC.aac
 #EXTINF:-1,Radio 80 - Forever Young
 http://nr11.newradio.it:9208/stream
+#EXTINF:-1,Radio 80 - Forever Young
+https://nr11.newradio.it:19208/stream?1600266195249
 #EXTINF:-1,Radio Adagio
 https://radioadagio.com/wp-content/uploads/2021/12/12-13-21-The-Mystery.mp3?_=1
 #EXTINF:-1,Radio Adige
@@ -635,6 +655,10 @@ http://ice12.fluidstream.net/bergamo.aac
 http://wma01.fluidstream.net/birikina
 #EXTINF:-1,Radio Brocken - Kulthits
 http://stream.radiobrocken.de/kulthits/mp3-256/direktlinkHP/play.pls
+#EXTINF:-1,Radio Budrio
+http://audio1.meway.tv:8040/
+#EXTINF:-1,Radio Budrio
+http://audio1.meway.tv:8040/
 #EXTINF:-1,Radio Budrio
 http://audio1.meway.tv:8040/
 #EXTINF:-1,Radio Capital
@@ -743,6 +767,10 @@ https://playoutonestreaming.com/proxy/rombalds?mp=/stream
 http://rosfm.ddns.net:8000/stream.mp3
 #EXTINF:-1,RTÉ Gold
 https://www.rte.ie/manifests/gold.m3u8
+#EXTINF:-1,RTÉ Gold
+https://liveaudio.rte.ie/hls-radio/gold/chunklist.m3u8
+#EXTINF:-1,RTÉ Gold
+https://liveaudio.rte.ie/hls-radio/gold/chunklist.m3u8
 #EXTINF:-1,RTL 102.5 BEST
 https://streamingv2.shoutcast.com/rtl-1025-best
 #EXTINF:-1,RTL 102.5 Best (working)
@@ -785,6 +813,8 @@ http://91.121.38.216:8060/stream
 https://study-high.rautemusik.fm/?ref=radiobrowser
 #EXTINF:-1,Sublime Funk && Disco
 https://playerservices.streamtheworld.com/api/livestream-redirect/SUBLIME_FUNK_DISCO.mp3
+#EXTINF:-1,Sublime Funk && Disco
+https://playerservices.streamtheworld.com/api/livestream-redirect/SUBLIME_FUNK_DISCO.mp3
 #EXTINF:-1,Sunshine FM 104.3
 http://radio.tehiku.live:8010/stream/1
 #EXTINF:-1,Sunshine Live - Die 80er
@@ -816,7 +846,7 @@ http://gbradio.cdn.tibus.net/U105?ref=rf
 #EXTINF:-1,UNIVERSAL Ciudad de México - 1110 AM - XERED-AM - Grupo Radio Centro - Ciudad de México
 https://playerservices.streamtheworld.com/api/livestream-redirect/XERED_AMAAC.aac
 #EXTINF:-1,Universal y la Octava 88.1
-http://18123.live.streamtheworld.com/XHEPR_FMAAC.aac?pname=StandardPlayerV4&pversion=4.19.2-025&csegid=888&dist=triton-web&tdsdk=js-2.9&banners=none&sbmid=6c68cc61-3756-4f54-c739-7986e4864c68
+http://18123.live.streamtheworld.com/XHEPR_FMAAC.aac?pname=StandardPlayerV4\u0026pversion=4.19.2-025\u0026csegid=888\u0026dist=triton-web\u0026tdsdk=js-2.9\u0026banners=none\u0026sbmid=6c68cc61-3756-4f54-c739-7986e4864c68
 #EXTINF:-1,Universe Radio
 http://www.universeradio.nl/playlist/radio.pls
 #EXTINF:-1,US1 Radio

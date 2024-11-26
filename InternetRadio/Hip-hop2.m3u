@@ -16,11 +16,11 @@ http://africagoesangeln.stream.laut.fm/africa_goes_angeln
 #EXTINF:-1,Astounded Old School Radio
 https://stream.laut.fm/astounded
 #EXTINF:-1,ATL Blaze Crunk City Radio Atlanta, GA
-https://samcloud.spacial.com/api/listen?sid=131980&rid=277661
+https://samcloud.spacial.com/api/listen?sid=131980\u0026rid=277661
 #EXTINF:-1,ATL Blaze Old School Throwback Jamz Atlanta, GA
-https://samcloud.spacial.com/api/listen?sid=131487&rid=276637
+https://samcloud.spacial.com/api/listen?sid=131487\u0026rid=276637
 #EXTINF:-1,ATL Blaze Tru New Hip-Hop Atlanta, GA
-https://samcloud.spacial.com/api/listen?sid=126751&rid=266138
+https://samcloud.spacial.com/api/listen?sid=126751\u0026rid=266138
 #EXTINF:-1,Audioasyl
 http://stream.audioasyl.net:8000/audioasyl
 #EXTINF:-1,BASS by rautemusik (rm.fm)
@@ -30,7 +30,7 @@ http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low
 #EXTINF:-1,BeatGo
 http://stream.laut.fm/beatgo
 #EXTINF:-1,Black Duck
-http://n07.radiojar.com/2p937t2kb.m4a?rj-ttl=5&rj-tok=AAABeKdtZzUALIMVzk2Pobu-Ig
+http://n07.radiojar.com/2p937t2kb.m4a?rj-ttl=5\u0026rj-tok=AAABeKdtZzUALIMVzk2Pobu-Ig
 #EXTINF:-1,Black Rhino Radio
 https://blackrhinoradio.out.airtime.pro/blackrhinoradio_a
 #EXTINF:-1,Boost Radio
@@ -53,6 +53,8 @@ https://campfm.radionetz.de:8001/campfm.mp3
 https://media1.mcr.iol.pt/wrcidade/cidhiphop.stream/playlist.m3u8
 #EXTINF:-1,Color Music Radio
 http://icecast6.play.cz/color192.mp3
+#EXTINF:-1,deutschrap
+http://stream.laut.fm/deutschrap
 #EXTINF:-1,Deutschrap
 http://stream.laut.fm/deutschrap
 #EXTINF:-1,DEUTSCHRAP by rautemusik (rm.fm)
@@ -72,7 +74,7 @@ https://streamer.radio.co/s0628bdd53/listen
 #EXTINF:-1,Fréquence Mutine
 http://icecast.infini.fr:8000/mutine
 #EXTINF:-1,Funstudio Danceradio
-https://samcloud.spacial.com/api/listen?sid=127520&rid=267529&f=mp3,any&br=192000,any&m=sc
+https://samcloud.spacial.com/api/listen?sid=127520\u0026rid=267529\u0026f=mp3,any\u0026br=192000,any\u0026m=sc
 #EXTINF:-1,Globl Funk Radio
 https://securestreams2.autopo.st:1148/stream
 #EXTINF:-1,GTA Radio
@@ -111,6 +113,8 @@ https://www.radioking.com/play/legrigri/273715
 https://radio.sutekihost.com:8020/radio.mp3
 #EXTINF:-1,LVA Radio
 https://s32.radiolize.com/radio/8030/radio.mp3?1595692825
+#EXTINF:-1,LVA Radio
+https://s32.radiolize.com/radio/8030/radio.mp3
 #EXTINF:-1,MAGIC Top100
 http://stream.laut.fm/magic-top100
 #EXTINF:-1,Mountain Reggae Radio
@@ -190,6 +194,8 @@ https://trap-high.rautemusik.fm/?ref=radiobrowser
 #EXTINF:-1,TUKIO
 https://stream.tukio.se/_b
 #EXTINF:-1,Uncertain FM
+https://uncertain.fm/streams/direct
+#EXTINF:-1,UncertainFM
 https://uncertain.fm/streams/direct
 #EXTINF:-1,Verge FM
 https://stream.radio.co/se493a5700/listen

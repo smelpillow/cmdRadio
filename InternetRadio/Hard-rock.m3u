@@ -3,6 +3,10 @@
 https://0n-deutschrock.radionetz.de/0n-deutschrock.aac
 #EXTINF:-1,- 0 N - Rock on Radio
 https://0n-rock.radionetz.de/0n-rock.mp3
+#EXTINF:-1,- 0 N - Rock on Radio
+https://0n-rock.radionetz.de/0n-rock.aac
+#EXTINF:-1,- 1 A - Rock von 1A Radio
+https://1a-rock.radionetz.de/1a-rock.mp3
 #EXTINF:-1,- 1 A - Rock von 1A Radio
 https://1a-rock.radionetz.de/1a-rock.aac
 #EXTINF:-1,0nlineradio METAL
@@ -101,6 +105,10 @@ https://streaming.exclusive.radio/er/gunsnroses/icecast.audio
 http://stream.laut.fm/fbsr
 #EXTINF:-1,FluxFM - Hard Rock
 http://streams.fluxfm.de/hardrock/mp3-128/streams.fluxfm.de/
+#EXTINF:-1,FluxFM - Hard Rock
+http://streams.fluxfm.de/hardrock/mp3-320/streams.fluxfm.de/
+#EXTINF:-1,FluxFM - Hard Rock
+http://streams.fluxfm.de/hardrock/aac-64/streams.fluxfm.de/
 #EXTINF:-1,Free FM Rock Austral
 https://freefmrock.radioca.st/
 #EXTINF:-1,Free FM Rock Bombay
@@ -109,6 +117,10 @@ http://tachyon.shoutca.st:8298/
 http://myradiostream.com/freedomrock
 #EXTINF:-1,Fresh Rock
 http://stream.freshrock.net/320.mp3
+#EXTINF:-1,Fresh Rock
+http://stream.freshrock.net/128.mp3
+#EXTINF:-1,Fresh Rock
+http://stream.freshrock.net/24.aac
 #EXTINF:-1,Freunde des Nordens
 http://stream.laut.fm/freunde-des-nordens
 #EXTINF:-1,goROCK
@@ -158,7 +170,7 @@ http://s11.ssl-stream.com:8055/stream
 #EXTINF:-1,Metallica && Iron Maiden ONLY
 http://46.4.184.212:8000/
 #EXTINF:-1,metalrock.fm
-http://kathy.torontocast.com:2820/?type=http&nocache=1594751889
+http://kathy.torontocast.com:2820/?type=http\u0026nocache=1594751889
 #EXTINF:-1,Miled Music Hard Rock
 http://192.99.34.205:8456/stream
 #EXTINF:-1,MIX Hard Rock (iHeart Radio) - Online - ACIR Online / iHeart Radio - Ciudad de México
@@ -171,6 +183,8 @@ https://radio.streemlion.com:4515/stream
 http://stream.laut.fm/notenkiste
 #EXTINF:-1,Oldies Internet Radio
 http://162.244.81.98:8140/listen
+#EXTINF:-1,Ottawa CHEZ 106.1 (CHEZFM)
+https://rogers-hls.leanstream.co/rogers/ott1061.stream/48k/playlist.m3u8
 #EXTINF:-1,OUI FM - Bring The Noise
 https://bringthenoise.stream.ouifm.fr/ouifmbringthenoise.mp3
 #EXTINF:-1,P11 Bandit
@@ -196,9 +210,9 @@ http://91.121.162.224:9012/stream
 #EXTINF:-1,Radio Bloodstream
 https://uk1.internet-radio.com/proxy/bloodstream?mp=/stream
 #EXTINF:-1,Radio BOB!
-http://bob.hoerradar.de/radiobob-live-mp3-hq?sABC=59p66q9n%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23zrqvncynlreobo&amsparams=playerid:mediaplayerbobskey:1506176410
+http://bob.hoerradar.de/radiobob-live-mp3-hq?sABC=59p66q9n%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23zrqvncynlreobo\u0026amsparams=playerid:mediaplayerbobskey:1506176410
 #EXTINF:-1,RADIO BOB! BOBs AC/DC Collection
-http://bob.hoerradar.de/radiobob-acdc-mp3-hq?sABC=59p6r9r8%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23fgernzf.enqvbobo.qr&amsparams=playerid:streams.radiobob.deskey:1506208232
+http://bob.hoerradar.de/radiobob-acdc-mp3-hq?sABC=59p6r9r8%230%23rnoopr590o2qqrp5qsq2s8p24q12pp2n%23fgernzf.enqvbobo.qr\u0026amsparams=playerid:streams.radiobob.deskey:1506208232
 #EXTINF:-1,RADIO BOB! BOBs Harte Saite
 http://streams.radiobob.de/bob-hartesaite/mp3-192/streams.radiobob.de/
 #EXTINF:-1,RADIO BOB! Livestream
@@ -215,12 +229,16 @@ https://laut.fm/emden
 https://stream.radiojar.com/sf65dpxy9vzuv
 #EXTINF:-1,Radio Futura 91.1
 https://cdn.mediatiquestream.com/radiosuy/futura.stream/playlist.m3u8
+#EXTINF:-1,Radio Futura 91.1
+http://radios-mp3-uy.cdn.nedmedia.io/uy-futura.mp3
 #EXTINF:-1,Radio Kolobrzeg
 http://graj.radiokolobrzeg.pl:8000/
 #EXTINF:-1,Radio M1
 http://stream.laut.fm/m1
 #EXTINF:-1,Radio Metal
 http://radio.radiometal.com/radiometal.mp3
+#EXTINF:-1,Radio Metal
+http://radio.radiometal.com/radiometal.mp3.m3u
 #EXTINF:-1,Radio Metal ON - The Heavy
 https://radiometalon.com/radio/8000/radio.mp3
 #EXTINF:-1,Radio Perfecto
@@ -281,6 +299,8 @@ http://room101.out.airtime.pro:8000/room101_b
 http://servidor32.brlogic.com:8056/live
 #EXTINF:-1,RPR1. Hard Rock
 https://streams.rpr1.de/rpr-hardrock-128-aac?usid=0-0-H-M-D-01
+#EXTINF:-1,RPR1. Hard Rock
+http://streams.rpr1.de/rpr-hardrock-128-mp3?usid=0-0-H-M-D-50
 #EXTINF:-1,RST Radio Rock
 https://servidor37-1.brlogic.com:8100/live
 #EXTINF:-1,RTBF Classic 21 - Live
@@ -300,7 +320,7 @@ http://stream.laut.fm/telecaster
 #EXTINF:-1,The Butchy Band Live at 118 North
 https://archive.org/download/ButchyBand2022-05-28.SBD.Matrix.Flac24/ButchyBand2022-05-28.SBD.Matrix.Flac24_vbr.m3u
 #EXTINF:-1,The Generator
-https://s1.myradiostream.com/:14268/?type=http&nocache=1608640718?0.7458407789862892
+https://s1.myradiostream.com/:14268/?type=http\u0026nocache=1608640718?0.7458407789862892
 #EXTINF:-1,THE ROCK DUBLIN
 https://rbxst004.radioca.st/streams/64kbps
 #EXTINF:-1,The Strip on Dash

@@ -50,7 +50,7 @@ https://annafm.ip-streaming.net/annafm
 #EXTINF:-1,Antenna VOX 80s
 http://servidor26.brlogic.com:7330/live?type=.mp3
 #EXTINF:-1,Antenne MV
-http://regiocast.hoerradar.de/antennemv-live-mp3-hq?sABC=5n2r7s19%230%23n773r87961726n9p9r0pq75s80n80205%23fgernzf.nagraarzi.qr&amsparams=playerid:streams.antennemv.deskey:1512996633
+http://regiocast.hoerradar.de/antennemv-live-mp3-hq?sABC=5n2r7s19%230%23n773r87961726n9p9r0pq75s80n80205%23fgernzf.nagraarzi.qr\u0026amsparams=playerid:streams.antennemv.deskey:1512996633
 #EXTINF:-1,Antenne Niedersachsen Oldies
 http://stream.antenne.com/oldies/mp3-192/linux/
 #EXTINF:-1,Antenne Niedersachsen Relax
@@ -61,12 +61,18 @@ http://radioarchipelfm.ice.infomaniak.ch/radioarchipelfm-64.mp3?token=a73d3f7878
 https://sts.pergom.mx/xhaf
 #EXTINF:-1,Arroba FM (Chihuahua) - 1360 AM - XEDI-AM - Radiorama - Chihuahua, Chihuahua
 https://stream.zeno.fm/hv5u0bg9d78uv
+#EXTINF:-1,Arroba FM (Chihuahua) - 88.5 FM - XHDI-FM - Radiorama - Chihuahua, Chihuahua
+https://stream.zeno.fm/hv5u0bg9d78uv
 #EXTINF:-1,Arroba FM (Ciudad Obregón) - 104.9 FM - XHESO-FM - Radiorama - Ciudad Obregón, Sonora
 https://stream.zeno.fm/6g9vm2ezbfhvv
 #EXTINF:-1,Arroba FM (Culiacán) - 95.3 FM - XHIN-FM - Radiorama - Culiacán, Sinaloa
 https://stream.zeno.fm/202c8kg9d78uv
+#EXTINF:-1,Arroba FM (Culiacán) - 95.3 FM - XHIN-FM - Radiorama - Culiacán, Sinaloa
+https://stream.zeno.fm/202c8kg9d78uv
 #EXTINF:-1,Arroba FM (Hermosillo) - 101.1 FM - XHVSS-FM - Radiorama Sonora - Hermosillo, Sonora
 https://freepi.host:9061/stream
+#EXTINF:-1,Arroba FM (Nogales) - 89.9 FM - XHHN-FM - Radiorama Sonora - Nogales, Sonora
+https://freepi.host:9066/stream
 #EXTINF:-1,Arroba FM (Nogales) - 89.9 FM - XHHN-FM - Radiorama Sonora - Nogales, Sonora
 https://freepi.host:9066/stream
 #EXTINF:-1,Arroba FM (Piedras Negras) - 101.7 FM - XHCPN-FM - Radiorama - Piedras Negras, Coahuila
@@ -82,7 +88,7 @@ http://stream.c9.fr/c9radio-192.mp3.m3u
 #EXTINF:-1,Carabineros de Chile Radio
 https://sonic01.instainternet.com/8374/stream
 #EXTINF:-1,Caroline Flashback
-http://sc2.radiocaroline.net:10558/?type=http&nocache=69242
+http://sc2.radiocaroline.net:10558/?type=http\u0026nocache=69242
 #EXTINF:-1,CHOC 88.7
 https://stream2.statsradio.com:8110/stream
 #EXTINF:-1,Church of Rock and Roll
@@ -153,7 +159,11 @@ https://s01.digitalserver.org/8066/stream.aac
 https://streamingcwsradio30.com:7056/
 #EXTINF:-1,Exa FM Comitán - 95.7 FM - XHCTS-FM - Radio Cañón / NTR Medios de Comunicación - Comitán, CS
 https://streaming.servicioswebmx.com/8242/stream
+#EXTINF:-1,Exa FM Comitán - 95.7 FM - XHCTS-FM - Radio Cañón / NTR Medios de Comunicación - Comitán, CS
+https://streaming.servicioswebmx.com/8242/stream
 #EXTINF:-1,Exa FM Córdoba - 91.3 FM - XHPT-FM - Radio Comunicaciones de las Altas Montañas - Córdoba, VE
+https://streamingenmexico.com:7097/stream
+#EXTINF:-1,Exa FM Córdoba - 91.3 FM - XHPT-FM - Radio Comunicaciones de las Altas Montañas - Córdoba, Veracruz
 https://streamingenmexico.com:7097/stream
 #EXTINF:-1,Exa FM Durango - 101.3 FM - XHCAV-FM - Grupo Radio Carlos C. Armas Vega - Durango, DG
 https://stream3.mexiserver.com:10076/stream.aac
@@ -163,6 +173,8 @@ http://158.69.219.162:8028/
 http://media.profesionalhosting.com:8151/stream.m3u
 #EXTINF:-1,Exa FM Honduras
 https://stream.zeno.fm/0n4tnx3wd5zuv
+#EXTINF:-1,Exa FM Honduras
+https://node-31.zeno.fm/fy0fhgp937zuv
 #EXTINF:-1,Exa FM Mexicali - 91.5 FM - XHJC-FM - MVS Radio - Mexicali, BC
 https://playerservices.streamtheworld.com/api/livestream-redirect/XHJCFM_SC
 #EXTINF:-1,Exa FM Nuevo Laredo - 95.7 FM - XHBK-FM - Nuevo Laredo, TM
@@ -213,10 +225,14 @@ https://freefmrock.radioca.st/
 http://stream.freezfm.nl/freezfm
 #EXTINF:-1,Fresh Rock
 http://stream.freshrock.net/320.mp3
+#EXTINF:-1,Fresh Rock
+http://stream.freshrock.net/128.mp3
+#EXTINF:-1,Fresh Rock
+http://stream.freshrock.net/24.aac
 #EXTINF:-1,FrissFM
 http://live.frissfm.ro:8000/frissfm
 #EXTINF:-1,Futuradios Rock
-https://stream.futuradios.com/rock?utm_source=communityradiobrowser&utm_medium=directory
+https://stream.futuradios.com/rock?utm_source=communityradiobrowser\u0026utm_medium=directory
 #EXTINF:-1,Gold - Velika Gorica
 http://live.goldfm.hr:8068/listen.pls
 #EXTINF:-1,Gold Radio
@@ -254,6 +270,8 @@ https://webprod.sipse.com.mx:9443/kisschetumal
 #EXTINF:-1,KISS FM (Ciudad del Carmen) - 95.5 FM - XHPCAR-FM - Grupo SIPSE - Ciudad del Carmen, CM
 https://webprod.sipse.com.mx:8080/carmen
 #EXTINF:-1,KISS FM (Mérida) - 97.7 FM - XHGL-FM - Grupo SIPSE - Mérida, YU
+https://webprod.sipse.com.mx:8080/kissfm/
+#EXTINF:-1,KISS FM (Mérida) - 97.7 FM - XHGL-FM - Grupo SIPSE - Mérida, Yucatán
 https://webprod.sipse.com.mx:8080/kissfm/
 #EXTINF:-1,KISS Online (Querétaro) - Online - Multimundo Radio - Querétaro, QR
 http://192.99.44.11:9861/stream.mp3
@@ -327,6 +345,8 @@ https://playradio.mx/proxy/los40jose?mp=/stream
 https://svr1.eradio.solutions/8002/
 #EXTINF:-1,LOS40 Riviera Maya - 96.1 FM - XHPPLY-FM - Cancún / Playa del Carmen, QR
 http://stream.zenolive.com/8pnsdde1sy8uv
+#EXTINF:-1,LOS40 Riviera Maya - 96.1 FM - XHPPLY-FM - Cancún / Playa del Carmen, QR
+https://node-35.zeno.fm/8pnsdde1sy8uv
 #EXTINF:-1,LOS40 Salina Cruz - 97.1 FM / 550 AM - XHHLL-FM / XEHLL-AM - CMI Oaxaca - Salina Cruz, OA
 http://107.180.94.182:8000/salinacruz971.ogg
 #EXTINF:-1,LOS40 San Luis Potosí - 540 AM - XEWA-AM - GlobalMedia - San Luis Potosí, SL
@@ -360,7 +380,7 @@ http://188.165.131.13:8008/live
 #EXTINF:-1,MiNT
 http://audiostream.rtl.be/mint192
 #EXTINF:-1,MS Hit Radio
-https://mshit-radio.stream.laut.fm/mshit-radio?ref=radiode&t302=2020-10-27_18-44-16&uuid=df04811c-7724-4496-89b7-cd02544437ed
+https://mshit-radio.stream.laut.fm/mshit-radio?ref=radiode\u0026t302=2020-10-27_18-44-16\u0026uuid=df04811c-7724-4496-89b7-cd02544437ed
 #EXTINF:-1,MUSIC STAR Ligabue
 http://icy.unitedradio.it/Ligabue.mp3
 #EXTINF:-1,MUSIC STAR Vasco
@@ -373,6 +393,8 @@ http://stream.myjungly.fr/POP-ROCK.m3u
 https://vega.aureofy.net/listen/ng_radio_buenos_aires/ngradio-mobile
 #EXTINF:-1,New Century by Match (iHeart Radio) - Online - ACIR Online / iHeart Radio - Ciudad de México
 https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR04_s01AAC.aac
+#EXTINF:-1,NG Radio Buenos Aires
+https://vega.aureofy.net/listen/ng_radio_buenos_aires/ngradio-mobile
 #EXTINF:-1,NiTfm
 https://sp0.redeaudio.com/8028/stream/
 #EXTINF:-1,No Limit Radio
@@ -415,6 +437,8 @@ https://stream.zeno.fm/4fevnsracshvv
 http://radio13.pro-fhi.net/listen-pdpyrses-stream.mp3
 #EXTINF:-1,Polskie Radio Kierowców
 http://stream3.polskieradio.pl:8918/
+#EXTINF:-1,Polskie Radio Kierowców
+http://stream3.polskieradio.pl:8918/
 #EXTINF:-1,Power Hit FM 87.8 - Christchurch, NZ
 http://listen.powerhitfm.co.nz:16100/stream
 #EXTINF:-1,PREMIER 91.7 (Monterrey) - 91.7 FM - XHXL-FM - Grupo Radio Alegría - Monterrey, NL
@@ -434,13 +458,13 @@ http://91.121.118.99:8112/
 #EXTINF:-1,Radio 2 FM 103.1
 http://audio.bustream.com:8004/stream
 #EXTINF:-1,Radio 31 Alternative
-http://alternative-radio.stream.laut.fm/alternative-radio?t302=2018-03-11_09-41-59&uuid=053d192c-eee0-4d8c-9495-c9224bfa4eb3
+http://alternative-radio.stream.laut.fm/alternative-radio?t302=2018-03-11_09-41-59\u0026uuid=053d192c-eee0-4d8c-9495-c9224bfa4eb3
 #EXTINF:-1,Rádio 96 FM
 https://cast4.hoost.com.br:20079/stream
 #EXTINF:-1,Radio Archipel FM
 http://radioarchipelfm.ice.infomaniak.ch/radioarchipelfm-64.mp3
 #EXTINF:-1,Radio BOB 2000er
-http://bob.hoerradar.de/radiobob-2000rock-mp3-hq?sABC=6114q90r%230%23r9rq928381098n8n085qqq3qq635o3op%23zrqvncynlre&=&amsparams=playerid:mediaplayerskey:1628756238
+http://bob.hoerradar.de/radiobob-2000rock-mp3-hq?sABC=6114q90r%230%23r9rq928381098n8n085qqq3qq635o3op%23zrqvncynlre\u0026=\u0026amsparams=playerid:mediaplayerskey:1628756238
 #EXTINF:-1,Radio Britannia
 http://01.solumedia.com.ar:8472/stream/
 #EXTINF:-1,Radio Carnaval Coatzacoalcos - Online - Coatzacoalcos, VE
@@ -480,7 +504,7 @@ http://servidor18.brlogic.com:7484/live
 #EXTINF:-1,Rádio Rebeca
 http://allnet.radionet.sk:8000/radiorebeca.mp3
 #EXTINF:-1,Radio RMF24.pl
-https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false&aw_0_req.userConsentV2=&aw_0_1st.playerid=RMF_Player_JS_P&aw_0_1st.rmf_disable_preroll=true
+https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false\u0026aw_0_req.userConsentV2=\u0026aw_0_1st.playerid=RMF_Player_JS_P\u0026aw_0_1st.rmf_disable_preroll=true
 #EXTINF:-1,Radio ROKS New Rock
 http://online.radioroks.ua/RadioROKS_NewRock_HD
 #EXTINF:-1,Radio Selenne
@@ -560,7 +584,7 @@ https://rtr99.fluidstream.eu/rtr99_poprock.mp3
 #EXTINF:-1,Sensación 95.5 (Xalapa) - 95.5 FM - XHTP-FM - Oliva Radio - Banderilla / Xalapa, VE
 http://sss.cnwks.ws:8322/
 #EXTINF:-1,Sensation Radio Nqn
-https://fps2.listen2myradio.com:2199/listen.php?ip=109.169.23.17&port=8203&type=ice&mount=stream
+https://fps2.listen2myradio.com:2199/listen.php?ip=109.169.23.17\u0026port=8203\u0026type=ice\u0026mount=stream
 #EXTINF:-1,Sepsi Rádió
 https://stream.sepsiradio.ro:8001/SepsiRadio
 #EXTINF:-1,Siculus Rádió Kézdivásárhely
@@ -601,6 +625,8 @@ https://ss1.audiorama.com.mx:6616/
 http://s1.audiorama.mx:6644/
 #EXTINF:-1,SUPER (Cuernavaca) - 98.1 FM - XHNG-FM - Grupo Audiorama Comunicaciones - Cuernavaca, MO
 https://ss1.audiorama.com.mx:6626/
+#EXTINF:-1,SUPER (Cuernavaca) - 98.1 FM - XHNG-FM - Grupo Audiorama Comunicaciones - Cuernavaca, MO
+https://ss1.audiorama.com.mx:6626/stream
 #EXTINF:-1,SUPER (Ensenada) - 101.1 FM - XHAT-FM - Grupo Audiorama Comunicaciones - Ensenada, BC
 https://ss1.audiorama.com.mx:6588/
 #EXTINF:-1,SUPER (Mexicali) - 89.9 FM - XHSOL-FM - Grupo Audiorama Comunicaciones - Mexicali, BC
@@ -684,7 +710,7 @@ http://vladix.dukahosting.com:8000/stream.nsv
 #EXTINF:-1,WACKENRADIO by rautemusik (rm.fm)
 https://wackenradio-high.rautemusik.fm/?ref=radiobrowser
 #EXTINF:-1,WKND 99.5, Montreal City
-http://streaming.cjpx.leclerccommunication.ca:8000/cjpx.mp3?type=.mp3&1597284756
+http://streaming.cjpx.leclerccommunication.ca:8000/cjpx.mp3?type=.mp3\u00261597284756
 #EXTINF:-1,Ya! FM Villahermosa - 95.7 FM - XHTAB-FM - Grupo Pazos - Villahermosa, TB
 https://sgaudio.centrocibernetico.com/yafmvillahermosa
 #EXTINF:-1,Έμπνευση

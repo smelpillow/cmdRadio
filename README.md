@@ -58,6 +58,15 @@ Hay varias cosas que podemos personalizar dentro del script, pero principalmente
 
 En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\InternetRadio", ahí podemos modificar, añadir o quitar los ficheros de las listas.
 
+### Actualización de ficheros M3U
+
+Añado pequeño script para actualizar los ficheros M3U, antes de ejecutar el script tendremos que clonar el proyecto de GitHub de "junguler" para tener los ultimos ficheros actualizados.
+
+1. Clonamos el proyecto de Junguler (git clone https://github.com/junguler/m3u-radio-music-playlists.git)
+2. Antes de ejecutar el script (getM3UFiles.ps1), tendremos que revisar que las variables de la rutas a los ficheros sean correctas.
+3. Con esa variable revisada, podemos ejecutar el script, solo se actualizaran los ficheros de la carpeta de cmdRadio en "InternetRadio".
+4. Ejecutamos de nuevo el fichero "cmdRadio.ps1" para que se actualize el listado de ficheros.
+
 ## Configuración Windows Terminal
 
 Se añade fichero settings.json con los datos para añadir una pestaña personalizada en el Terminal,se añade fichero .png con icono para el Terminal.
