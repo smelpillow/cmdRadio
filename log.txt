@@ -1,1 +1,86 @@
 05/02/2025 12:52:59 - Saliendo del script
+05/02/2025 12:53:44 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 12:53:44 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 12:54:43 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\goa_trance.m3u
+05/02/2025 12:54:43 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\goa_trance.m3u
+05/02/2025 12:55:47 - Saliendo del script
+05/02/2025 12:57:44 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\club.m3u
+05/02/2025 12:57:44 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\club.m3u
+05/02/2025 12:57:47 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\lovers_rock_reggae.m3u
+05/02/2025 12:57:47 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\lovers_rock_reggae.m3u
+05/02/2025 12:57:50 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\euro_house.m3u
+05/02/2025 12:57:50 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\euro_house.m3u
+05/02/2025 12:58:17 - Saliendo del script
+05/02/2025 12:58:43 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\pop_rock.m3u
+05/02/2025 12:58:43 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\pop_rock.m3u
+05/02/2025 12:58:47 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\classic_metal.m3u
+05/02/2025 12:58:47 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\classic_metal.m3u
+05/02/2025 12:59:11 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\dub.m3u
+05/02/2025 12:59:11 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\dub.m3u
+05/02/2025 12:59:13 - Saliendo del script
+05/02/2025 13:00:40 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\pop_rock.m3u
+05/02/2025 13:00:40 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\pop_rock.m3u
+05/02/2025 13:00:43 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Classic-hits.m3u
+05/02/2025 13:00:43 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Classic-hits.m3u
+05/02/2025 13:01:07 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\metal.m3u
+05/02/2025 13:01:07 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\metal.m3u
+05/02/2025 13:01:21 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Classic-hits.m3u
+05/02/2025 13:01:21 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Classic-hits.m3u
+05/02/2025 13:01:23 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\classic_metal.m3u
+05/02/2025 13:01:23 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\classic_metal.m3u
+05/02/2025 13:01:52 - Saliendo del script
+05/02/2025 13:02:07 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\r_and_b.m3u
+05/02/2025 13:02:07 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\r_and_b.m3u
+05/02/2025 13:02:08 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\hard_rock.m3u
+05/02/2025 13:02:08 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\hard_rock.m3u
+05/02/2025 13:02:46 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\soft_rock.m3u
+05/02/2025 13:03:01 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\soft_rock.m3u
+05/02/2025 13:03:06 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\top40.m3u
+05/02/2025 13:03:47 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\top40.m3u
+05/02/2025 13:03:50 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\house.m3u
+05/02/2025 13:03:55 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\house.m3u
+05/02/2025 13:04:16 - Saliendo del script
+05/02/2025 13:04:51 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\classic_hip_hop.m3u
+05/02/2025 13:04:51 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\classic_hip_hop.m3u
+05/02/2025 13:04:54 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\lofi.m3u
+05/02/2025 13:04:54 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\lofi.m3u
+05/02/2025 13:04:56 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Hard-rock.m3u
+05/02/2025 13:04:56 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Hard-rock.m3u
+05/02/2025 13:04:58 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\top40.m3u
+05/02/2025 13:04:58 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\top40.m3u
+05/02/2025 13:08:22 - Saliendo del script
+05/02/2025 13:18:30 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 13:18:30 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 13:18:31 - Saliendo del script
+05/02/2025 13:19:34 - Reproduciendo estación en línea: Dark Metal-Radio - http://stream.laut.fm/dark-metal-radio
+05/02/2025 13:21:30 - Saliendo del script
+05/02/2025 13:22:04 - Reproduciendo estación en línea: Best of Rock FM - Metallica - https://radio21.streamabc.net/radio21-singersongwriter-mp3-192-5376445
+05/02/2025 13:23:27 - Saliendo del script
+05/02/2025 13:24:42 - Reproduciendo estación en línea: 1.FM - Dubstep Forward Radio - http://strm112.1.fm/dubstep_mobile_mp3
+05/02/2025 13:28:23 - Saliendo del script
+05/02/2025 13:29:09 - Reproduciendo estación en línea: bigFM Reggae Vibez - http://streams.bigfm.de/bigfm-reggaevibes-128-aac
+05/02/2025 13:32:24 - Saliendo del script
+05/02/2025 13:32:59 - Saliendo del script
+05/02/2025 13:34:07 - Reproduciendo estación aleatoria en línea: Kinozal.TV - https://listen4.myradio24.com/kinozaltv
+05/02/2025 13:34:08 - Saliendo del script
+05/02/2025 13:34:30 - Reproduciendo estación aleatoria en línea: One FM New Hits - https://webradio0001.ice.infomaniak.ch/webradio0001-128.mp3
+05/02/2025 13:36:05 - Saliendo del script
+05/02/2025 13:36:24 - Reproduciendo estación aleatoria en línea: RMC Love Songs - http://edge.radiomontecarlo.net/rmcweb006
+05/02/2025 13:39:04 - Saliendo del script
+05/02/2025 13:39:33 - Reproduciendo estación aleatoria en línea: radio gafsa - http://rtstream.tanitweb.com/gafsa
+05/02/2025 13:39:33 - Estación añadida al historial: radio gafsa - http://rtstream.tanitweb.com/gafsa
+05/02/2025 13:39:52 - Reproduciendo estación aleatoria en línea: Sports 1280 - https://stream.revma.ihrhls.com/zc6223
+05/02/2025 13:39:52 - Estación añadida al historial: Sports 1280 - https://stream.revma.ihrhls.com/zc6223
+05/02/2025 13:40:07 - Reproduciendo estación aleatoria en línea: RADIO DON - https://01.solumedia.com.ar:8936/stream
+05/02/2025 13:40:07 - Estación añadida al historial: RADIO DON - https://01.solumedia.com.ar:8936/stream
+05/02/2025 13:40:44 - Reproduciendo estación en línea: CLÁSICOS REGGAETON 24_7 - https://stream.zeno.fm/2g1qkn4cbpeuv
+05/02/2025 13:40:44 - Estación añadida al historial: CLÁSICOS REGGAETON 24_7 - https://stream.zeno.fm/2g1qkn4cbpeuv
+05/02/2025 13:40:50 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Pop_dance.m3u
+05/02/2025 13:40:50 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Pop_dance.m3u
+05/02/2025 13:40:51 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\euro_techno.m3u
+05/02/2025 13:40:51 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\euro_techno.m3u
+05/02/2025 13:41:15 - Reproduciendo estación aleatoria en línea: Миргород FM - https://myrhorodfm.com.ua:8443/live
+05/02/2025 13:41:15 - Estación añadida al historial: Миргород FM - https://myrhorodfm.com.ua:8443/live
+05/02/2025 13:46:51 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 13:46:51 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 13:46:53 - Saliendo del script

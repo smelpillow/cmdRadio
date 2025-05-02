@@ -17,6 +17,104 @@ if (-not (Test-Path $musicFolder)) {
 
 $m3uFiles = Get-ChildItem -Path $musicFolder -Filter "*.m3u" | Select-Object -ExpandProperty Name
 
+# Función para buscar Radio Online
+function Search-RadioOnline {
+    param (
+        [string]$searchTerm
+    )
+    $apiUrl = "https://de1.api.radio-browser.info/json/stations/search?name=$searchTerm"
+    try {
+        $response = Invoke-RestMethod -Uri $apiUrl -Method Get
+        if ($response.Count -eq 0) {
+            Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
+        } else {
+            $pageSize = 10
+            $currentPage = 0
+            $totalPages = [math]::Ceiling($response.Count / $pageSize)
+
+            do {
+                Clear-Host
+                Write-Host "Resultados de búsqueda para '$searchTerm' (Página $($currentPage + 1) de $totalPages):" -ForegroundColor Cyan
+                $startIndex = $currentPage * $pageSize
+                $endIndex = [math]::Min($startIndex + $pageSize, $response.Count) - 1
+
+                for ($i = $startIndex; $i -le $endIndex; $i++) {
+                    Write-Host "$($i + 1). $($response[$i].name) - $($response[$i].url)"
+                }
+
+                Write-Host "=============================================="
+                Write-Host "W. Página siguiente" -ForegroundColor Blue
+                Write-Host "E. Página anterior" -ForegroundColor Green
+                Write-Host "Q. Salir" -ForegroundColor Red
+                Write-Host "=============================================="
+
+                $selection = Read-Host "Seleccione el número de la estación o un comando"
+                if ($selection -match '^\d+$') {
+                    $index = [int]$selection - 1
+                    if ($index -ge 0 -and $index -lt $response.Count) {
+                        $selectedStation = $response[$index]
+                        if (-not $selectedStation.url) {
+                            Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
+                        } else {
+                            mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $selectedStation.url
+                            Write-Action "Reproduciendo estación en línea: $($selectedStation.name) - $($selectedStation.url)"
+                            Add-ToHistory -station "$($selectedStation.name) - $($selectedStation.url)"
+                        }
+                        break
+                    } else {
+                        Write-Host "Número fuera de rango. Intente de nuevo." -ForegroundColor Red
+                    }
+                } elseif ($selection -eq "w" -or $selection -eq "W") {
+                    if ($currentPage -lt ($totalPages - 1)) {
+                        $currentPage++
+                    } else {
+                        Write-Host "Ya estás en la última página." -ForegroundColor Yellow
+                    }
+                } elseif ($selection -eq "e" -or $selection -eq "E") {
+                    if ($currentPage -gt 0) {
+                        $currentPage--
+                    } else {
+                        Write-Host "Ya estás en la primera página." -ForegroundColor Yellow
+                    }
+                } elseif ($selection -eq "q" -or $selection -eq "Q") {
+                    break
+                } else {
+                    Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
+                }
+            } while ($true)
+        }
+    } catch {
+        Write-Host "Error al consultar la API: $_" -ForegroundColor Red
+    }
+}
+
+# Función para reproducir una estación aleatoria en línea
+function Get-RandomRadioOnline {
+    $apiUrl = "https://de1.api.radio-browser.info/json/stations"
+    try {
+        $response = Invoke-RestMethod -Uri $apiUrl -Method Get
+        if ($response.Count -eq 0) {
+            Write-Host "No se encontraron estaciones disponibles en la API." -ForegroundColor Red
+        } else {
+            $randomStation = Get-Random -InputObject $response
+            if (-not $randomStation.url) {
+                Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
+            } else {
+                Write-Host "Reproduciendo estación aleatoria: $($randomStation.name)" -ForegroundColor Green
+                Write-Host "URL: $($randomStation.url)" -ForegroundColor Cyan
+                mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $randomStation.url
+                Write-Action "Reproduciendo estación aleatoria en línea: $($randomStation.name) - $($randomStation.url)"
+                Add-ToHistory -station "$($randomStation.name) - $($randomStation.url)"
+            }
+        }
+    } catch {
+        Write-Host "Error al consultar la API: $_" -ForegroundColor Red
+    }
+}
+
+# Variable global para el historial de reproducción
+$playHistory = @()
+
 # Función para verificar la instalación de mpv
 function Test-MpvInstallation {
     $mpvExecutable = "mpv"
@@ -59,11 +157,11 @@ function Show-Menu {
         Write-Host "W. Página siguiente" -ForegroundColor Blue
         Write-Host "E. Página anterior" -ForegroundColor Green
         Write-Host "R. Reproducir una estación al azar" -ForegroundColor Magenta
-        Write-Host "S. Buscar estación" -ForegroundColor Yellow
+        Write-Host "O. Buscar estación en línea" -ForegroundColor Cyan
+        Write-Host "X. Reproducir estación aleatoria en línea" -ForegroundColor Magenta
         Write-Host "H. Historial de reproducción" -ForegroundColor DarkGreen
         Write-Host "F. Favoritos" -ForegroundColor DarkRed
         Write-Host "A. Agregar estación a favoritos" -ForegroundColor DarkBlue
-        Write-Host "V. Ajustar volumen" -ForegroundColor Cyan
         Write-Host "Q. Salir" -ForegroundColor Green
         Write-Host "=============================================="
 
@@ -97,16 +195,20 @@ function Show-Menu {
             return "favorites"
         } elseif ($answer -eq "h" -or $answer -eq "H") {
             return "history"
-        } elseif ($answer -eq "s" -or $answer -eq "S") {
-            return "search"
-        } elseif ($answer -eq "v" -or $answer -eq "V") {
-            return "volume"
         } elseif ($answer -eq "p" -or $answer -eq "P") {
             return "play"
         } elseif ($answer -eq "a" -or $answer -eq "A") {
             return "addFavorite"
         } elseif ($answer -eq "q" -or $answer -eq "Q") {
             return "quit"
+        } elseif ($answer -eq "o" -or $answer -eq "O") {
+            $searchTerm = Read-Host "Ingrese el término de búsqueda"
+            Search-RadioOnline -searchTerm $searchTerm
+            # Pause
+        } elseif ($answer -eq "x" -or $answer -eq "X") {
+            # Reproducir una estación aleatoria en línea
+            Get-RandomRadioOnline
+            Pause
         } else {
             Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
             Pause
@@ -114,26 +216,23 @@ function Show-Menu {
     } while ($true)
 }
 
-# Función para registrar logs
 function Write-Action {
     param (
         [string]$message
     )
     $logFile = "C:\GitHub\cmdRadio\log.txt"
-    Add-Content -Path $logFile -Value "$(Get-Date) - $message"
-}
+    $maxLines = 500  # Número máximo de líneas en el archivo de log
 
-# Función para buscar estaciones
-function Search-Stations {
-    param (
-        [string]$searchTerm
-    )
-    $filteredFiles = $m3uFiles | Where-Object { $_ -like "*$searchTerm*" }
-    if ($filteredFiles.Count -eq 0) {
-        Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
-    } else {
-        Write-Host "Estaciones encontradas:" -ForegroundColor Cyan
-        $filteredFiles | ForEach-Object { Write-Host $_ }
+    # Agregar la nueva entrada al log
+    Add-Content -Path $logFile -Value "$(Get-Date) - $message"
+
+    # Limitar el número de líneas en el archivo
+    if (Test-Path $logFile) {
+        $lines = Get-Content $logFile
+        if ($lines.Count -gt $maxLines) {
+            $lines = $lines[-$maxLines..-1]  # Mantener solo las últimas N líneas
+            $lines | Set-Content -Path $logFile
+        }
     }
 }
 
@@ -186,14 +285,11 @@ function Show-Favorites {
 }
 
 # Función para manejar historial de reproducción
-$playHistory = @()
-
-# Función para manejar historial de reproducción
 function Add-ToHistory {
     param (
         [string]$station
     )
-    $playHistory += $station
+    $global:playHistory += $station
     Write-Action "Estación añadida al historial: $station"
 }
 
@@ -203,19 +299,6 @@ function Show-History {
     } else {
         Write-Host "Historial de reproducción:" -ForegroundColor Cyan
         $playHistory | ForEach-Object { Write-Host $_ }
-    }
-}
-
-# Función para ajustar el volumen
-function Set-Volume {
-    param (
-        [int]$volumeLevel
-    )
-    if ($volumeLevel -lt 0 -or $volumeLevel -gt 100) {
-        Write-Host "El nivel de volumen debe estar entre 0 y 100." -ForegroundColor Red
-    } else {
-        mpv --volume=$volumeLevel
-        Write-Host "Volumen ajustado a $volumeLevel%" -ForegroundColor Green
     }
 }
 
@@ -269,11 +352,6 @@ do {
                 $repeat = $false
             }
         } while ($repeat)
-    } elseif ($result -eq "search") {
-        # Buscar estación
-        $searchTerm = Read-Host "Ingrese el término de búsqueda"
-        Search-Stations -searchTerm $searchTerm
-        Pause
     } elseif ($result -eq "favorites") {
         # Mostrar favoritos
         Show-Favorites
@@ -286,11 +364,6 @@ do {
     } elseif ($result -eq "history") {
         # Mostrar historial de reproducción
         Show-History
-        Pause
-    } elseif ($result -eq "volume") {
-        # Ajustar volumen
-        $volumeLevel = Read-Host "Ingrese el nivel de volumen (0-100)"
-        Set-Volume -volumeLevel $volumeLevel
         Pause
     } elseif ($result -eq "quit") {
         # Salir del script
