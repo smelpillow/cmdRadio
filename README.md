@@ -87,5 +87,4 @@ Se añaden nuevas funciones al script.
 - Nueva función, gestión de favoritos.
   - Agregar a favoritos.
   - Ver favoritos.
-- Nueva función, "Temporizador de apagado".
-- Nueva función, "Ajustar volumen".
+- Nuevas funciones para reproducir radios online.

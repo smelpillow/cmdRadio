@@ -135,7 +135,7 @@ function Test-MpvInstallation {
 # Función para mostrar el menú con paginación
 function Show-Menu {
     param (
-        [int]$pageSize = 10
+        [int]$pageSize = 15
     )
     $currentPage = 0
     $totalPages = [math]::Ceiling($m3uFiles.Count / $pageSize)
