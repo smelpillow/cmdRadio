@@ -45,7 +45,7 @@ function Show-Menu {
     do {
         Clear-Host
         Write-Host "=============================================="
-        Write-Host "        Radio Stations 2.0 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
+        Write-Host "        cmdRadio 2.0 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
         Write-Host "=============================================="
 
         # Mostrar estaciones de la página actual
