@@ -202,13 +202,9 @@ function Show-Menu {
         } elseif ($answer -eq "q" -or $answer -eq "Q") {
             return "quit"
         } elseif ($answer -eq "o" -or $answer -eq "O") {
-            $searchTerm = Read-Host "Ingrese el término de búsqueda"
-            Search-RadioOnline -searchTerm $searchTerm
-            # Pause
+            return "radioonline"
         } elseif ($answer -eq "x" -or $answer -eq "X") {
-            # Reproducir una estación aleatoria en línea
-            Get-RandomRadioOnline
-            Pause
+            return "randomOnline"
         } else {
             Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
             Pause
@@ -364,6 +360,15 @@ do {
     } elseif ($result -eq "history") {
         # Mostrar historial de reproducción
         Show-History
+        Pause
+    } elseif ($result -eq "radioonline") {
+        # Buscar estación en línea
+        $searchTerm = Read-Host "Ingrese el término de búsqueda"
+        Search-RadioOnline -searchTerm $searchTerm
+        Pause
+    } elseif ($result -eq "randomOnline") {
+        # Reproducir una estación al azar
+        Get-RandomRadioOnline
         Pause
     } elseif ($result -eq "quit") {
         # Salir del script

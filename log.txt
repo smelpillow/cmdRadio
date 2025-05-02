@@ -97,3 +97,8 @@
 05/02/2025 14:42:10 - Reproduciendo estación en línea: Record Hard Bass - https://radiorecord.hostingradio.ru/hbass96.aacp
 05/02/2025 14:42:10 - Estación añadida al historial: Record Hard Bass - https://radiorecord.hostingradio.ru/hbass96.aacp
 05/02/2025 14:44:31 - Saliendo del script
+05/02/2025 14:48:43 - Reproduciendo estación en línea: La Grosse Radio Métal - https://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3
+05/02/2025 14:48:43 - Estación añadida al historial: La Grosse Radio Métal - https://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3
+05/02/2025 14:48:44 - Saliendo del script
+05/02/2025 14:49:52 - Reproduciendo estación en línea: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/02/2025 14:49:52 - Estación añadida al historial: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
