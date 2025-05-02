@@ -92,3 +92,8 @@
 05/02/2025 14:25:04 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\electronic.m3u
 05/02/2025 14:25:25 - Reproduciendo estación aleatoria en línea: Radio Noordzee - https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR17.mp3
 05/02/2025 14:25:25 - Estación añadida al historial: Radio Noordzee - https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR17.mp3
+05/02/2025 14:41:31 - Reproduciendo estación en línea: Radio Caprice - Minimal Tech House - http://79.111.119.111:8000/mintechhouse
+05/02/2025 14:41:31 - Estación añadida al historial: Radio Caprice - Minimal Tech House - http://79.111.119.111:8000/mintechhouse
+05/02/2025 14:42:10 - Reproduciendo estación en línea: Record Hard Bass - https://radiorecord.hostingradio.ru/hbass96.aacp
+05/02/2025 14:42:10 - Estación añadida al historial: Record Hard Bass - https://radiorecord.hostingradio.ru/hbass96.aacp
+05/02/2025 14:44:31 - Saliendo del script

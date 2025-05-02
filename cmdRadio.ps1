@@ -28,7 +28,7 @@ function Search-RadioOnline {
         if ($response.Count -eq 0) {
             Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
         } else {
-            $pageSize = 10
+            $pageSize = 20
             $currentPage = 0
             $totalPages = [math]::Ceiling($response.Count / $pageSize)
 
