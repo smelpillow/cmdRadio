@@ -1,0 +1,22 @@
+05/02/2025 10:17:26 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\electro.m3u
+05/02/2025 10:17:29 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\hardcore.m3u
+05/02/2025 10:17:33 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\spanish_(spain).m3u
+05/02/2025 10:20:11 - Opción inválida seleccionada: m
+05/02/2025 10:32:33 - Opción inválida seleccionada: m
+05/02/2025 10:38:02 - Script terminado por el usuario
+05/02/2025 10:38:02 - Script final
+05/02/2025 10:38:14 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\spanish_generalistas.m3u
+05/02/2025 10:40:15 - Saliendo del script
+05/02/2025 10:41:44 - Saliendo del script
+05/02/2025 10:44:12 - Saliendo del script
+05/02/2025 10:45:27 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\dance_hall.m3u
+05/02/2025 10:47:29 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\lovers_rock_reggae.m3u
+05/02/2025 10:49:33 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\top40.m3u
+05/02/2025 10:49:33 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\electro.m3u
+05/02/2025 11:01:10 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\1fm.m3u
+05/02/2025 11:02:42 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Classics.m3u
+05/02/2025 11:02:52 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\club.m3u
+05/02/2025 11:12:40 - Saliendo del script
+05/02/2025 11:13:26 - Saliendo del script
+05/02/2025 11:16:51 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\classic_hip_hop.m3u
+05/02/2025 11:16:53 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Pop-rock.m3u
