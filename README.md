@@ -1,4 +1,4 @@
-# cmdRadio
+# cmdRadio 2.0
 
 Bienvenido a este proyecto GitHub que basícamente se trata de un script que utiliza el reproductor por comando MPV y un listado de ficheros .m3u para reproducir las emisoras por internet.
 
@@ -62,7 +62,7 @@ En caso de querer modificar los ficheros, los tendremos en "C:\GitHub\cmdRadio\I
 
 Añado pequeño script para actualizar los ficheros M3U, antes de ejecutar el script tendremos que clonar el proyecto de GitHub de "junguler" para tener los ultimos ficheros actualizados.
 
-1. Clonamos el proyecto de Junguler (git clone https://github.com/junguler/m3u-radio-music-playlists.git)
+1. Clonamos el proyecto de Junguler (git clone <https://github.com/junguler/m3u-radio-music-playlists.git>)
 2. Antes de ejecutar el script (getM3UFiles.ps1), tendremos que revisar que las variables de la rutas a los ficheros sean correctas.
 3. Con esa variable revisada, podemos ejecutar el script, solo se actualizaran los ficheros de la carpeta de cmdRadio en "InternetRadio".
 4. Ejecutamos de nuevo el fichero "cmdRadio.ps1" para que se actualize el listado de ficheros.
@@ -76,3 +76,16 @@ Se añade fichero settings.json con los datos para añadir una pestaña personal
 Se añaden ficheros de configuración de Mpv, para que se pueda modificar la configuración y que sea una configuración específica para el script.
 
 Se añade linea "watch-later-directory=~/.mpv/watch_later" en el fichero de configuración de MPV para que los archivos temporales no se guarden dentro del proyecto.
+
+## Mejoras versión 2.0
+
+Se añaden nuevas funciones al script.
+
+- Menú principal, añadida paginación de ficheros .m3u
+- Nueva función, "Buscar estación".
+- Nueva función, "Historial de reproducción".
+- Nueva función, gestión de favoritos.
+  - Agregar a favoritos.
+  - Ver favoritos.
+- Nueva función, "Temporizador de apagado".
+- Nueva función, "Ajustar volumen".

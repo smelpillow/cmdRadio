@@ -1,7 +1,13 @@
 # Configuración inicial
-$musicFolder = Read-Host "Ingrese la ruta de la carpeta de música [C:\GitHub\cmdRadio\InternetRadio]"
-if (-not $musicFolder) {
-    $musicFolder = "C:\GitHub\cmdRadio\InternetRadio"
+if (Test-Path "/.dockerenv") {
+    # Estamos en un contenedor Docker
+    $musicFolder = "/app/InternetRadio"
+} else {
+    # Estamos en el host
+    $musicFolder = Read-Host "Ingrese la ruta de la carpeta de música [C:\GitHub\cmdRadio\InternetRadio]"
+    if (-not $musicFolder) {
+        $musicFolder = "C:\GitHub\cmdRadio\InternetRadio"
+    }
 }
 
 if (-not (Test-Path $musicFolder)) {
@@ -39,7 +45,7 @@ function Show-Menu {
     do {
         Clear-Host
         Write-Host "=============================================="
-        Write-Host "        Radio Stations Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
+        Write-Host "        Radio Stations 2.0 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
         Write-Host "=============================================="
 
         # Mostrar estaciones de la página actual

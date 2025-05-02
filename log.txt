@@ -22,3 +22,9 @@
 05/02/2025 11:16:53 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Pop-rock.m3u
 05/02/2025 11:18:01 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\top_.m3u
 05/02/2025 11:18:02 - Saliendo del script
+05/02/2025 11:20:18 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\roots_reggae.m3u
+05/02/2025 11:20:21 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\rock_n_roll.m3u
+05/02/2025 11:22:56 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\minimal_techno.m3u
+05/02/2025 11:33:22 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/02/2025 11:33:27 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\disco.m3u
+05/02/2025 11:33:28 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\trap.m3u
