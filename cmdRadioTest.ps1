@@ -27,7 +27,7 @@ function Write-Action {
 }
 
 # Función para reproducir una estación con mpv en segundo plano
-function Play-Station {
+function Start-Station {
     param (
         [string]$filePath
     )
@@ -110,7 +110,7 @@ do {
         $selection = Read-Host "Seleccione el número de la estación"
         if ($selection -match '^\d+$' -and [int]$selection -le $m3uFiles.Count -and [int]$selection -gt 0) {
             $selectedFile = Join-Path $musicFolder $m3uFiles[[int]$selection - 1]
-            Play-Station -filePath $selectedFile
+            Start-Station -filePath $selectedFile
         } else {
             Write-Host "Selección no válida." -ForegroundColor Red
         }
@@ -118,7 +118,7 @@ do {
         # Reproducir una estación al azar
         $randomFile = Get-Random -InputObject $m3uFiles
         $selectedFile = Join-Path $musicFolder $randomFile
-        Play-Station -filePath $selectedFile
+        Start-Station -filePath $selectedFile
     } elseif ($option -eq "3") {
         # Detener reproducción
         Stop-Mpv

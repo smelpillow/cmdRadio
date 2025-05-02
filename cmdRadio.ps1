@@ -63,7 +63,6 @@ function Show-Menu {
         Write-Host "H. Historial de reproducción" -ForegroundColor DarkGreen
         Write-Host "F. Favoritos" -ForegroundColor DarkRed
         Write-Host "A. Agregar estación a favoritos" -ForegroundColor DarkBlue
-        write-Host "T. Temporizador de apagado" -ForegroundColor Red
         Write-Host "V. Ajustar volumen" -ForegroundColor Cyan
         Write-Host "Q. Salir" -ForegroundColor Green
         Write-Host "=============================================="
@@ -100,8 +99,6 @@ function Show-Menu {
             return "history"
         } elseif ($answer -eq "s" -or $answer -eq "S") {
             return "search"
-        } elseif ($answer -eq "t" -or $answer -eq "T") {
-            return "timer"
         } elseif ($answer -eq "v" -or $answer -eq "V") {
             return "volume"
         } elseif ($answer -eq "p" -or $answer -eq "P") {
@@ -150,6 +147,16 @@ if (Test-Path $favoritesFile) {
     $favorites = @()
 }
 
+# Función para cargar los favoritos desde el archivo
+function Get-Favorites {
+    if (Test-Path $favoritesFile) {
+        $favorites = Get-Content $favoritesFile
+    } else {
+        $favorites = @()
+    }
+    return $favorites
+}
+
 # Función para manejar favoritos
 function Add-ToFavorites {
     param (
@@ -158,13 +165,18 @@ function Add-ToFavorites {
     if ($favorites -contains $station) {
         Write-Host "La estación ya está en favoritos." -ForegroundColor Yellow
     } else {
-        $favorites += $station
-        $favorites | Set-Content -Path $favoritesFile
+        # Agregar el favorito al archivo
+        Add-Content -Path $favoritesFile -Value $station
+        # Actualizar la variable $favorites
+        $favorites = Get-Favorites
         Write-Host "Estación agregada a favoritos: $station" -ForegroundColor Green
     }
 }
 
+# Función para mostrar favoritos
 function Show-Favorites {
+    # Actualizar la variable $favorites antes de mostrar
+    $favorites = Get-Favorites
     if ($favorites.Count -eq 0) {
         Write-Host "No tienes estaciones favoritas." -ForegroundColor Yellow
     } else {
@@ -176,16 +188,22 @@ function Show-Favorites {
 # Función para manejar historial de reproducción
 $playHistory = @()
 
+# Función para manejar historial de reproducción
 function Add-ToHistory {
     param (
         [string]$station
     )
     $playHistory += $station
+    Write-Action "Estación añadida al historial: $station"
 }
 
 function Show-History {
-    Write-Host "Historial de reproducción:" -ForegroundColor Cyan
-    $playHistory | ForEach-Object { Write-Host $_ }
+    if ($playHistory.Count -eq 0) {
+        Write-Host "El historial de reproducción está vacío." -ForegroundColor Yellow
+    } else {
+        Write-Host "Historial de reproducción:" -ForegroundColor Cyan
+        $playHistory | ForEach-Object { Write-Host $_ }
+    }
 }
 
 # Función para ajustar el volumen
@@ -199,17 +217,6 @@ function Set-Volume {
         mpv --volume=$volumeLevel
         Write-Host "Volumen ajustado a $volumeLevel%" -ForegroundColor Green
     }
-}
-
-# Función para configurar temporizador de apagado
-function Set-Timer {
-    param (
-        [int]$minutes
-    )
-    Write-Host "El temporizador está configurado para detener la reproducción en $minutes minutos." -ForegroundColor Green
-    Start-Sleep -Seconds ($minutes * 60)
-    Stop-Process -Name "mpv"
-    Write-Host "Reproducción detenida después de $minutes minutos." -ForegroundColor Green
 }
 
 # Verifica la instalación de mpv antes de continuar
@@ -284,11 +291,6 @@ do {
         # Ajustar volumen
         $volumeLevel = Read-Host "Ingrese el nivel de volumen (0-100)"
         Set-Volume -volumeLevel $volumeLevel
-        Pause
-    } elseif ($result -eq "timer") {
-        # Configurar temporizador de apagado
-        $minutes = Read-Host "Ingrese el tiempo en minutos para detener la reproducción"
-        Set-Timer -minutes $minutes
         Pause
     } elseif ($result -eq "quit") {
         # Salir del script
