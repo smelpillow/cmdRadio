@@ -28,31 +28,34 @@ function Search-RadioOnline {
         if ($response.Count -eq 0) {
             Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
         } else {
+            # Almacenar los resultados de la búsqueda
+            $searchResults = $response
             $pageSize = 20
             $currentPage = 0
-            $totalPages = [math]::Ceiling($response.Count / $pageSize)
+            $totalPages = [math]::Ceiling($searchResults.Count / $pageSize)
 
             do {
                 Clear-Host
                 Write-Host "Resultados de búsqueda para '$searchTerm' (Página $($currentPage + 1) de $totalPages):" -ForegroundColor Cyan
                 $startIndex = $currentPage * $pageSize
-                $endIndex = [math]::Min($startIndex + $pageSize, $response.Count) - 1
+                $endIndex = [math]::Min($startIndex + $pageSize, $searchResults.Count) - 1
 
                 for ($i = $startIndex; $i -le $endIndex; $i++) {
-                    Write-Host "$($i + 1). $($response[$i].name) - $($response[$i].url)"
+                    Write-Host "$($i + 1). $($searchResults[$i].name) - $($searchResults[$i].url)"
                 }
 
                 Write-Host "=============================================="
                 Write-Host "W. Página siguiente" -ForegroundColor Blue
                 Write-Host "E. Página anterior" -ForegroundColor Green
+                Write-Host "R. Reproducir una estación aleatoria de los resultados" -ForegroundColor Magenta
                 Write-Host "Q. Salir" -ForegroundColor Red
                 Write-Host "=============================================="
 
                 $selection = Read-Host "Seleccione el número de la estación o un comando"
                 if ($selection -match '^\d+$') {
                     $index = [int]$selection - 1
-                    if ($index -ge 0 -and $index -lt $response.Count) {
-                        $selectedStation = $response[$index]
+                    if ($index -ge 0 -and $index -lt $searchResults.Count) {
+                        $selectedStation = $searchResults[$index]
                         if (-not $selectedStation.url) {
                             Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
                         } else {
@@ -76,6 +79,31 @@ function Search-RadioOnline {
                     } else {
                         Write-Host "Ya estás en la primera página." -ForegroundColor Yellow
                     }
+                } elseif ($selection -eq "r" -or $selection -eq "R") {
+                    # Reproducir una estación aleatoria de los resultados
+                    do {
+                        $randomStation = Get-Random -InputObject $searchResults
+                        if (-not $randomStation.url) {
+                            Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
+                        } else {
+                            Write-Host "Reproduciendo estación aleatoria: $($randomStation.name)" -ForegroundColor Green
+                            Write-Host "URL: $($randomStation.url)" -ForegroundColor Cyan
+                            try {
+                                mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $randomStation.url
+                                Write-Action "Reproduciendo estación aleatoria en línea: $($randomStation.name) - $($randomStation.url)"
+                                Add-ToHistory -station "$($randomStation.name) - $($randomStation.url)"
+                            } catch {
+                                Write-Host "Error al reproducir la estación: $_" -ForegroundColor Red
+                                Write-Action "Error al reproducir estación aleatoria: $($randomStation.name) - $_"
+                            }
+                        }
+                        $repeat = Read-Host "¿Quieres reproducir otra estación aleatoria? (S/N) [S]"
+                        if ($repeat -eq "" -or $repeat -eq "S" -or $repeat -eq "s") {
+                            $repeat = $true
+                        } else {
+                            $repeat = $false
+                        }
+                    } while ($repeat)
                 } elseif ($selection -eq "q" -or $selection -eq "Q") {
                     break
                 } else {

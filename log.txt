@@ -102,3 +102,108 @@
 05/02/2025 14:48:44 - Saliendo del script
 05/02/2025 14:49:52 - Reproduciendo estación en línea: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
 05/02/2025 14:49:52 - Estación añadida al historial: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/02/2025 14:50:38 - Reproduciendo estación en línea: Soul Roots Radio - https://streams.radio.co/sbdfc075c0/listen
+05/02/2025 14:50:38 - Estación añadida al historial: Soul Roots Radio - https://streams.radio.co/sbdfc075c0/listen
+05/02/2025 14:51:08 - Saliendo del script
+05/02/2025 15:00:50 - Reproduciendo estación en línea: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/02/2025 15:00:50 - Estación añadida al historial: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/02/2025 15:00:51 - Saliendo del script
+05/07/2025 09:31:31 - Reproduciendo estación en línea: 0nlineradio SOFT ROCK - https://stream.0nlineradio.com/soft-rock?ref=radiobrowser
+05/07/2025 09:31:31 - Estación añadida al historial: 0nlineradio SOFT ROCK - https://stream.0nlineradio.com/soft-rock?ref=radiobrowser
+05/07/2025 09:54:38 - Reproduciendo estación en línea: La Grosse Radio Reggae - https://hd.lagrosseradio.info/lagrosseradio-reggae-192.mp3
+05/07/2025 09:54:38 - Estación añadida al historial: La Grosse Radio Reggae - https://hd.lagrosseradio.info/lagrosseradio-reggae-192.mp3
+05/07/2025 09:54:55 - Reproduciendo estación en línea: La Grosse Radio Métal - https://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3
+05/07/2025 09:54:55 - Estación añadida al historial: La Grosse Radio Métal - https://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3
+05/07/2025 09:55:13 - Reproduciendo estación en línea: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 09:55:13 - Estación añadida al historial: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 10:48:44 - Reproduciendo estación en línea: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 10:48:44 - Estación añadida al historial: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 12:27:21 - Reproduciendo estación en línea: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 12:27:21 - Estación añadida al historial: La Grosse Radio Metal - Hard Heavy - http://hd.lagrosseradio.info/lagrosseradio-metal-192.mp3?
+05/07/2025 12:27:37 - Reproduciendo estación en línea: Classic Metal Radio - https://quincy.torontocast.com:2100/
+05/07/2025 12:27:37 - Estación añadida al historial: Classic Metal Radio - https://quincy.torontocast.com:2100/
+05/07/2025 12:27:55 - Reproduciendo estación en línea: 1.FM - Classic Country Radio - http://strm112.1.fm/ccountry_mobile_mp3
+05/07/2025 12:27:55 - Estación añadida al historial: 1.FM - Classic Country Radio - http://strm112.1.fm/ccountry_mobile_mp3
+05/07/2025 12:37:11 - Reproduciendo estación en línea: 1.FM - BOM Psytrance Radio - http://strm112.1.fm/psytrance_mobile_mp3
+05/07/2025 12:37:11 - Estación añadida al historial: 1.FM - BOM Psytrance Radio - http://strm112.1.fm/psytrance_mobile_mp3
+05/07/2025 12:51:02 - Reproduciendo estación en línea: 181.FM - Old School HipHop/RnB - http://listen.181fm.com/181-oldschool_128k.mp3
+05/07/2025 12:51:02 - Estación añadida al historial: 181.FM - Old School HipHop/RnB - http://listen.181fm.com/181-oldschool_128k.mp3
+05/07/2025 12:51:07 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Pop-dance.m3u
+05/07/2025 12:51:07 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Pop-dance.m3u
+05/07/2025 12:51:24 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\alternative.m3u
+05/07/2025 12:51:24 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\alternative.m3u
+05/07/2025 12:51:26 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\dance_pop.m3u
+05/07/2025 12:51:26 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\dance_pop.m3u
+05/07/2025 12:51:28 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\hits.m3u
+05/07/2025 12:51:28 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\hits.m3u
+05/07/2025 12:51:31 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\urban_and_rnb.m3u
+05/07/2025 12:51:31 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\urban_and_rnb.m3u
+05/07/2025 12:51:33 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\r_and_b.m3u
+05/07/2025 12:51:33 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\r_and_b.m3u
+05/07/2025 12:51:42 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\spanish_(spain).m3u
+05/07/2025 12:51:42 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\spanish_(spain).m3u
+05/07/2025 12:51:45 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\death_metal.m3u
+05/07/2025 12:51:45 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\death_metal.m3u
+05/07/2025 12:54:22 - Reproduciendo estación en línea: Radio Caprice - Brutal Death Metal - http://79.111.119.111:8000/brutaldeathmetal.m3u
+05/07/2025 12:54:22 - Estación añadida al historial: Radio Caprice - Brutal Death Metal - http://79.111.119.111:8000/brutaldeathmetal.m3u
+05/07/2025 12:55:01 - Reproduciendo estación en línea: Dark Metal-Radio - http://stream.laut.fm/dark-metal-radio
+05/07/2025 12:55:01 - Estación añadida al historial: Dark Metal-Radio - http://stream.laut.fm/dark-metal-radio
+05/07/2025 12:55:13 - Reproduciendo estación en línea: Bandung Death Metal Syndicate - https://stream.zeno.fm/t9wdzppre5zuv
+05/07/2025 12:55:13 - Estación añadida al historial: Bandung Death Metal Syndicate - https://stream.zeno.fm/t9wdzppre5zuv
+05/07/2025 12:57:02 - Reproduciendo estación en línea: RadCap - Melodic Death Metal - http://79.120.77.11:9091/;
+05/07/2025 12:57:02 - Estación añadida al historial: RadCap - Melodic Death Metal - http://79.120.77.11:9091/;
+05/07/2025 13:17:07 - Reproduciendo estación en línea: RadCap - Symphonic Death Metal - http://213.141.131.10:8000/symphodeath.m3u
+05/07/2025 13:17:08 - Estación añadida al historial: RadCap - Symphonic Death Metal - http://213.141.131.10:8000/symphodeath.m3u
+05/07/2025 13:21:36 - Reproduciendo estación en línea: Radio Caprice - Death Metal - http://79.120.77.11:9083/
+05/07/2025 13:21:36 - Estación añadida al historial: Radio Caprice - Death Metal - http://79.120.77.11:9083/
+05/07/2025 13:26:53 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\rock_and_roll.m3u
+05/07/2025 13:26:53 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\rock_and_roll.m3u
+05/07/2025 13:26:54 - Reproduciendo archivo al azar: C:\GitHub\cmdRadio\InternetRadio\Hip-hop2.m3u
+05/07/2025 13:26:54 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Hip-hop2.m3u
+05/07/2025 13:27:04 - Reproduciendo estación en línea: Egregore Radio - https://radio.egrego.re/radio/8000/radio.mp3
+05/07/2025 13:27:04 - Estación añadida al historial: Egregore Radio - https://radio.egrego.re/radio/8000/radio.mp3
+05/07/2025 13:27:05 - Saliendo del script
+05/07/2025 15:24:44 - Reproduciendo estación en línea: ChroniX Radio Metalcore - http://usa17.fastcast4u.com:5508/listen.pls
+05/07/2025 15:24:44 - Estación añadida al historial: ChroniX Radio Metalcore - http://usa17.fastcast4u.com:5508/listen.pls
+05/07/2025 15:25:48 - Saliendo del script
+05/07/2025 15:28:53 - Reproduciendo estación en línea: Radio Rockstar - http://stream.ueteknik.se:8000/rockstar?type=http&nocache=8624712
+05/07/2025 15:28:53 - Estación añadida al historial: Radio Rockstar - http://stream.ueteknik.se:8000/rockstar?type=http&nocache=8624712
+05/07/2025 15:29:16 - Reproduciendo estación en línea: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 15:29:16 - Estación añadida al historial: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 15:30:45 - Reproduciendo estación en línea: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 15:30:46 - Estación añadida al historial: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 17:01:30 - Reproduciendo estación en línea: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 17:01:30 - Estación añadida al historial: Rockstar Radio - https://dr2101.ice.infomaniak.ch/dr2102.mp3
+05/07/2025 17:01:31 - Saliendo del script
+05/07/2025 17:06:59 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\2000s.m3u
+05/07/2025 17:06:59 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\2000s.m3u
+05/07/2025 17:07:12 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/07/2025 17:07:12 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/07/2025 17:08:18 - Reproduciendo archivo: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/07/2025 17:08:18 - Estación añadida al historial: C:\GitHub\cmdRadio\InternetRadio\Catalan.m3u
+05/07/2025 17:16:33 - Reproduciendo estación en línea: Dutch Delite Drum and Bass - http://radio.dutchdelite.nl:8000/dnb
+05/07/2025 17:16:33 - Estación añadida al historial: Dutch Delite Drum and Bass - http://radio.dutchdelite.nl:8000/dnb
+05/07/2025 17:16:34 - Saliendo del script
+05/07/2025 17:17:01 - Reproduciendo estación aleatoria en línea: Dutch Delite Drum and Bass - http://radio.dutchdelite.nl:8000/dnb
+05/07/2025 17:17:01 - Estación añadida al historial: Dutch Delite Drum and Bass - http://radio.dutchdelite.nl:8000/dnb
+05/07/2025 17:17:27 - Saliendo del script
+05/07/2025 17:17:45 - Reproduciendo estación aleatoria en línea: Smooth Jazz Lounge - https://radio4.vip-radios.fm:18060/stream-128kmp3-SmoothJazzLounge
+05/07/2025 17:17:45 - Estación añadida al historial: Smooth Jazz Lounge - https://radio4.vip-radios.fm:18060/stream-128kmp3-SmoothJazzLounge
+05/07/2025 17:17:47 - Saliendo del script
+05/07/2025 17:20:44 - Reproduciendo estación aleatoria en línea: CKFF 104.1 "Drumbeat Radio" Kipawa, QC - https://stream.radiojar.com/yc0zykcd898uv
+05/07/2025 17:20:44 - Estación añadida al historial: CKFF 104.1 "Drumbeat Radio" Kipawa, QC - https://stream.radiojar.com/yc0zykcd898uv
+05/07/2025 17:20:47 - Reproduciendo estación aleatoria en línea: Radio M00 Drum - https://radio.m00.su:8000/drumandbass.mp3
+05/07/2025 17:20:47 - Estación añadida al historial: Radio M00 Drum - https://radio.m00.su:8000/drumandbass.mp3
+05/07/2025 17:20:50 - Reproduciendo estación aleatoria en línea: CKDQ "910 CFCW"  Drumheller, AB - http://newcap.leanstream.co/CKDQAM
+05/07/2025 17:20:50 - Estación añadida al historial: CKDQ "910 CFCW"  Drumheller, AB - http://newcap.leanstream.co/CKDQAM
+05/07/2025 17:20:55 - Reproduciendo estación aleatoria en línea: Radio Caprice - Drum 'n' Bass [1] - http://79.111.14.76:8002/drumbass
+05/07/2025 17:20:55 - Estación añadida al historial: Radio Caprice - Drum 'n' Bass [1] - http://79.111.14.76:8002/drumbass
+05/07/2025 17:21:35 - Saliendo del script
+05/07/2025 17:22:22 - Reproduciendo estación aleatoria en línea: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:22 - Estación añadida al historial: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:28 - Reproduciendo estación aleatoria en línea: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:28 - Estación añadida al historial: La Grosse Radio Rock - https://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:32 - Reproduciendo estación aleatoria en línea: La Grosse Radio Rock - http://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:32 - Estación añadida al historial: La Grosse Radio Rock - http://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:33 - Reproduciendo estación aleatoria en línea: La Grosse Radio Rock - http://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
+05/07/2025 17:22:33 - Estación añadida al historial: La Grosse Radio Rock - http://hd.lagrosseradio.info/lagrosseradio-rock-192.mp3
