@@ -244,7 +244,12 @@ function Write-Action {
     param (
         [string]$message
     )
-    $logFile = "C:\GitHub\cmdRadio\log.txt"
+    # Cambiar la ubicación del archivo de log a la carpeta del usuario
+    $logFolder = Join-Path $env:USERPROFILE "cmdRadio"
+    if (-not (Test-Path $logFolder)) {
+        New-Item -ItemType Directory -Path $logFolder | Out-Null
+    }
+    $logFile = Join-Path $logFolder "log.txt"
     $maxLines = 500  # Número máximo de líneas en el archivo de log
 
     # Agregar la nueva entrada al log
