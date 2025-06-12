@@ -22,7 +22,7 @@ function Search-RadioOnline {
     param (
         [string]$searchTerm
     )
-    $apiUrl = "https://de1.api.radio-browser.info/json/stations/search?name=$searchTerm"
+    $apiUrl = "https://fi1.api.radio-browser.info/json/stations/search?name=$searchTerm"
     try {
         $response = Invoke-RestMethod -Uri $apiUrl -Method Get
         if ($response.Count -eq 0) {
