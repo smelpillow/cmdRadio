@@ -22,97 +22,109 @@ function Search-RadioOnline {
     param (
         [string]$searchTerm
     )
-    $apiUrl = "https://fi1.api.radio-browser.info/json/stations/search?name=$searchTerm"
-    try {
-        $response = Invoke-RestMethod -Uri $apiUrl -Method Get
-        if ($response.Count -eq 0) {
-            Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
-        } else {
-            # Almacenar los resultados de la búsqueda
-            $searchResults = $response
-            $pageSize = 20
-            $currentPage = 0
-            $totalPages = [math]::Ceiling($searchResults.Count / $pageSize)
+    $apiUrls = @(
+        "https://fi1.api.radio-browser.info/json/stations/search?name=$searchTerm",
+        "https://de2.api.radio-browser.info/json/stations/search?name=$searchTerm"
+    )
+    $response = $null
+    foreach ($apiUrl in $apiUrls) {
+        try {
+            $response = Invoke-RestMethod -Uri $apiUrl -Method Get -TimeoutSec 5
+            if ($response -and $response.Count -ge 0) {
+                break
+            }
+        } catch {
+            Write-Host "No se pudo conectar con: $apiUrl" -ForegroundColor Yellow
+        }
+    }
+    if (-not $response) {
+        Write-Host "Error: No se pudo obtener respuesta de ninguna API de Radio Browser." -ForegroundColor Red
+        return
+    }
+    if ($response.Count -eq 0) {
+        Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Red
+    } else {
+        # ...resto del código existente para mostrar resultados y paginación...
+        $searchResults = $response
+        $pageSize = 20
+        $currentPage = 0
+        $totalPages = [math]::Ceiling($searchResults.Count / $pageSize)
+        do {
+            Clear-Host
+            Write-Host "Resultados de búsqueda para '$searchTerm' (Página $($currentPage + 1) de $totalPages):" -ForegroundColor Cyan
+            $startIndex = $currentPage * $pageSize
+            $endIndex = [math]::Min($startIndex + $pageSize, $searchResults.Count) - 1
 
-            do {
-                Clear-Host
-                Write-Host "Resultados de búsqueda para '$searchTerm' (Página $($currentPage + 1) de $totalPages):" -ForegroundColor Cyan
-                $startIndex = $currentPage * $pageSize
-                $endIndex = [math]::Min($startIndex + $pageSize, $searchResults.Count) - 1
+            for ($i = $startIndex; $i -le $endIndex; $i++) {
+                Write-Host "$($i + 1). $($searchResults[$i].name) - $($searchResults[$i].url)"
+            }
 
-                for ($i = $startIndex; $i -le $endIndex; $i++) {
-                    Write-Host "$($i + 1). $($searchResults[$i].name) - $($searchResults[$i].url)"
-                }
+            Write-Host "=============================================="
+            Write-Host "W. Página siguiente" -ForegroundColor Blue
+            Write-Host "E. Página anterior" -ForegroundColor Green
+            Write-Host "R. Reproducir una estación aleatoria de los resultados" -ForegroundColor Magenta
+            Write-Host "Q. Salir" -ForegroundColor Red
+            Write-Host "=============================================="
 
-                Write-Host "=============================================="
-                Write-Host "W. Página siguiente" -ForegroundColor Blue
-                Write-Host "E. Página anterior" -ForegroundColor Green
-                Write-Host "R. Reproducir una estación aleatoria de los resultados" -ForegroundColor Magenta
-                Write-Host "Q. Salir" -ForegroundColor Red
-                Write-Host "=============================================="
-
-                $selection = Read-Host "Seleccione el número de la estación o un comando"
-                if ($selection -match '^\d+$') {
-                    $index = [int]$selection - 1
-                    if ($index -ge 0 -and $index -lt $searchResults.Count) {
-                        $selectedStation = $searchResults[$index]
-                        if (-not $selectedStation.url) {
-                            Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
-                        } else {
-                            mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $selectedStation.url
-                            Write-Action "Reproduciendo estación en línea: $($selectedStation.name) - $($selectedStation.url)"
-                            Add-ToHistory -station "$($selectedStation.name) - $($selectedStation.url)"
-                        }
-                        break
+            $selection = Read-Host "Seleccione el número de la estación o un comando"
+            if ($selection -match '^\d+$') {
+                $index = [int]$selection - 1
+                if ($index -ge 0 -and $index -lt $searchResults.Count) {
+                    $selectedStation = $searchResults[$index]
+                    if (-not $selectedStation.url) {
+                        Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
                     } else {
-                        Write-Host "Número fuera de rango. Intente de nuevo." -ForegroundColor Red
+                        mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $selectedStation.url
+                        Write-Action "Reproduciendo estación en línea: $($selectedStation.name) - $($selectedStation.url)"
+                        Add-ToHistory -station "$($selectedStation.name) - $($selectedStation.url)"
                     }
-                } elseif ($selection -eq "w" -or $selection -eq "W") {
-                    if ($currentPage -lt ($totalPages - 1)) {
-                        $currentPage++
-                    } else {
-                        Write-Host "Ya estás en la última página." -ForegroundColor Yellow
-                    }
-                } elseif ($selection -eq "e" -or $selection -eq "E") {
-                    if ($currentPage -gt 0) {
-                        $currentPage--
-                    } else {
-                        Write-Host "Ya estás en la primera página." -ForegroundColor Yellow
-                    }
-                } elseif ($selection -eq "r" -or $selection -eq "R") {
-                    # Reproducir una estación aleatoria de los resultados
-                    do {
-                        $randomStation = Get-Random -InputObject $searchResults
-                        if (-not $randomStation.url) {
-                            Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
-                        } else {
-                            Write-Host "Reproduciendo estación aleatoria: $($randomStation.name)" -ForegroundColor Green
-                            Write-Host "URL: $($randomStation.url)" -ForegroundColor Cyan
-                            try {
-                                mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $randomStation.url
-                                Write-Action "Reproduciendo estación aleatoria en línea: $($randomStation.name) - $($randomStation.url)"
-                                Add-ToHistory -station "$($randomStation.name) - $($randomStation.url)"
-                            } catch {
-                                Write-Host "Error al reproducir la estación: $_" -ForegroundColor Red
-                                Write-Action "Error al reproducir estación aleatoria: $($randomStation.name) - $_"
-                            }
-                        }
-                        $repeat = Read-Host "¿Quieres reproducir otra estación aleatoria? (S/N) [S]"
-                        if ($repeat -eq "" -or $repeat -eq "S" -or $repeat -eq "s") {
-                            $repeat = $true
-                        } else {
-                            $repeat = $false
-                        }
-                    } while ($repeat)
-                } elseif ($selection -eq "q" -or $selection -eq "Q") {
                     break
                 } else {
-                    Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
+                    Write-Host "Número fuera de rango. Intente de nuevo." -ForegroundColor Red
                 }
-            } while ($true)
-        }
-    } catch {
-        Write-Host "Error al consultar la API: $_" -ForegroundColor Red
+            } elseif ($selection -eq "w" -or $selection -eq "W") {
+                if ($currentPage -lt ($totalPages - 1)) {
+                    $currentPage++
+                } else {
+                    Write-Host "Ya estás en la última página." -ForegroundColor Yellow
+                }
+            } elseif ($selection -eq "e" -or $selection -eq "E") {
+                if ($currentPage -gt 0) {
+                    $currentPage--
+                } else {
+                    Write-Host "Ya estás en la primera página." -ForegroundColor Yellow
+                }
+            } elseif ($selection -eq "r" -or $selection -eq "R") {
+                # Reproducir una estación aleatoria de los resultados
+                do {
+                    $randomStation = Get-Random -InputObject $searchResults
+                    if (-not $randomStation.url) {
+                        Write-Host "La estación seleccionada no tiene una URL válida." -ForegroundColor Red
+                    } else {
+                        Write-Host "Reproduciendo estación aleatoria: $($randomStation.name)" -ForegroundColor Green
+                        Write-Host "URL: $($randomStation.url)" -ForegroundColor Cyan
+                        try {
+                            mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $randomStation.url
+                            Write-Action "Reproduciendo estación aleatoria en línea: $($randomStation.name) - $($randomStation.url)"
+                            Add-ToHistory -station "$($randomStation.name) - $($randomStation.url)"
+                        } catch {
+                            Write-Host "Error al reproducir la estación: $_" -ForegroundColor Red
+                            Write-Action "Error al reproducir estación aleatoria: $($randomStation.name) - $_"
+                        }
+                    }
+                    $repeat = Read-Host "¿Quieres reproducir otra estación aleatoria? (S/N) [S]"
+                    if ($repeat -eq "" -or $repeat -eq "S" -or $repeat -eq "s") {
+                        $repeat = $true
+                    } else {
+                        $repeat = $false
+                    }
+                } while ($repeat)
+            } elseif ($selection -eq "q" -or $selection -eq "Q") {
+                break
+            } else {
+                Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
+            }
+        } while ($true)
     }
 }
 
