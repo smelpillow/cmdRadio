@@ -44,13 +44,13 @@ function Search-YouTube {
 }
 
 # Función para reproducir un video desde una URL
-function Play-Video {
+function Start-Video {
     param (
         [string]$videoUrl
     )
     try {
         Write-Host "Reproduciendo video: $videoUrl" -ForegroundColor Green
-        Start-Process -FilePath "mpv" "-ArgumentList --config-dir=C:\Github\cmdRadio\cmdTube" $videoUrl
+        Start-Process -FilePath "mpv" "-ArgumentList --config-dir=C:\Github\cmdRadio\cmdTube" "$videoUrl"
         Write-Action "Reproduciendo video: $videoUrl"
         Add-ToHistory -video $videoUrl
     } catch {
@@ -100,12 +100,12 @@ function Show-Favorites {
 }
 
 # Función para reproducir un video aleatorio de los favoritos
-function Play-RandomFavorite {
+function Start-RandomFavorite {
     if ($favorites.Count -eq 0) {
         Write-Host "No tienes videos favoritos para reproducir." -ForegroundColor Yellow
     } else {
         $randomVideo = Get-Random -InputObject $favorites
-        Play-Video -videoUrl $randomVideo
+        Start-Video -videoUrl $randomVideo
     }
 }
 
@@ -155,7 +155,7 @@ do {
         Search-YouTube -searchTerm $searchTerm
     } elseif ($option -eq "2") {
         $videoUrl = Read-Host "Ingrese la URL del video"
-        Play-Video -videoUrl $videoUrl
+        Start-Video -videoUrl $videoUrl
     } elseif ($option -eq "3") {
         Show-History
         Pause
@@ -167,7 +167,7 @@ do {
         Add-ToFavorites -videoUrl $videoUrl
         Pause
     } elseif ($option -eq "6") {
-        Play-RandomFavorite
+        Start-RandomFavorite
         Pause
     } elseif ($option -eq "7") {
         Write-Host "Saliendo del script..." -ForegroundColor Green

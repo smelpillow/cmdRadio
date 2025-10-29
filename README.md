@@ -94,4 +94,5 @@ Se añaden nuevas funciones al script.
 Se añaden nuevas funciones al script.
 
 - Menú principal, añadida opcion para buscar string en ficheros locales.
+- Menú prinicipal, mostrar el primer menú en dos columnas.
 - Interfaz visual, se añade barra de progreso para busquedas largas.

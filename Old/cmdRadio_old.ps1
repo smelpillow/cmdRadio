@@ -93,12 +93,12 @@ function Search-RadioOnline {
                 Write-Host "$($i + 1). $($searchResults[$i].name) - $($searchResults[$i].url)"
             }
 
-            Write-Host "============================================================================================"
+            Write-Host "=============================================="
             Write-Host "W. Página siguiente" -ForegroundColor Blue
             Write-Host "E. Página anterior" -ForegroundColor Green
             Write-Host "R. Reproducir una estación aleatoria de los resultados" -ForegroundColor Magenta
             Write-Host "Q. Salir" -ForegroundColor Red
-            Write-Host "============================================================================================"
+            Write-Host "=============================================="
 
             $selection = Read-Host "Seleccione el número de la estación o un comando"
             if ($selection -match '^\d+$') {
@@ -212,38 +212,25 @@ function Test-MpvInstallation {
 # Función para mostrar el menú con paginación
 function Show-Menu {
     param (
-        [int]$pageSize = 24
+        [int]$pageSize = 12
     )
     $currentPage = 0
     $totalPages = [math]::Ceiling($m3uFiles.Count / $pageSize)
 
     do {
         Clear-Host
-        Write-Host "============================================================================================"
+        Write-Host "=============================================="
         Write-Host "        cmdRadio 2.1 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
-        Write-Host "============================================================================================"
+        Write-Host "=============================================="
 
-        # Mostrar estaciones en dos columnas
+        # Mostrar estaciones de la página actual
         $startIndex = $currentPage * $pageSize
         $endIndex = [math]::Min($startIndex + $pageSize, $m3uFiles.Count) - 1
-        $items = $m3uFiles[$startIndex..$endIndex]
-        $columnas = 2
-        $filas = [math]::Ceiling($items.Count / $columnas)
-
-        for ($i = 0; $i -lt $filas; $i++) {
-            $linea = ""
-            for ($j = 0; $j -lt $columnas; $j++) {
-                $index = $i + $j * $filas
-                if ($index -lt $items.Count) {
-                    $numero = $startIndex + $index + 1
-                    $texto = "$numero. $($items[$index])"
-                    $linea += "{0,-45}" -f $texto
-                }
-            }
-            Write-Host $linea
+        for ($i = $startIndex; $i -le $endIndex; $i++) {
+            Write-Host "$($i + 1). $($m3uFiles[$i])"
         }
 
-        Write-Host "============================================================================================"
+        Write-Host "=============================================="
         Write-Host "W. Página siguiente" -ForegroundColor Blue
         Write-Host "E. Página anterior" -ForegroundColor Green
         Write-Host "R. Reproducir una estación al azar" -ForegroundColor Magenta
@@ -254,7 +241,7 @@ function Show-Menu {
         Write-Host "F. Favoritos" -ForegroundColor DarkRed
         Write-Host "A. Agregar estación a favoritos" -ForegroundColor DarkBlue
         Write-Host "Q. Salir" -ForegroundColor Green
-        Write-Host "============================================================================================"
+        Write-Host "=============================================="
 
         $answer = Read-Host "Ingrese el número de opción o comando"
 
@@ -266,20 +253,38 @@ function Show-Menu {
                 Write-Host "Número fuera de rango. Intente de nuevo." -ForegroundColor Red
                 Pause
             }
-        } elseif ($answer -match '^[wefhrsoxapq]$' -or $answer -match '^[WEFHRSOXAPQ]$') {
-            switch ($answer.ToLower()) {
-                'w' { if ($currentPage -lt ($totalPages - 1)) { $currentPage++ } else { Write-Host "Ya estás en la última página." -ForegroundColor Yellow; Pause } }
-                'e' { if ($currentPage -gt 0) { $currentPage-- } else { Write-Host "Ya estás en la primera página." -ForegroundColor Yellow; Pause } }
-                'r' { return "random" }
-                'f' { return "favorites" }
-                'h' { return "history" }
-                'p' { return "play" }
-                'a' { return "addFavorite" }
-                'q' { return "quit" }
-                's' { return "searchlocal" }
-                'o' { return "radioonline" }
-                'x' { return "randomOnline" }
+        } elseif ($answer -eq "w" -or $answer -eq "W") {
+            if ($currentPage -lt ($totalPages - 1)) {
+                $currentPage++
+            } else {
+                Write-Host "Ya estás en la última página." -ForegroundColor Yellow
+                Pause
             }
+        } elseif ($answer -eq "e" -or $answer -eq "E") {
+            if ($currentPage -gt 0) {
+                $currentPage--
+            } else {
+                Write-Host "Ya estás en la primera página." -ForegroundColor Yellow
+                Pause
+            }
+        } elseif ($answer -eq "r" -or $answer -eq "R") {
+            return "random"
+        } elseif ($answer -eq "f" -or $answer -eq "F") {
+            return "favorites"
+        } elseif ($answer -eq "h" -or $answer -eq "H") {
+            return "history"
+        } elseif ($answer -eq "p" -or $answer -eq "P") {
+            return "play"
+        } elseif ($answer -eq "a" -or $answer -eq "A") {
+            return "addFavorite"
+        } elseif ($answer -eq "q" -or $answer -eq "Q") {
+            return "quit"
+        } elseif ($answer -eq "s" -or $answer -eq "S") {
+            return "searchlocal"
+        } elseif ($answer -eq "o" -or $answer -eq "O") {
+            return "radioonline"
+        } elseif ($answer -eq "x" -or $answer -eq "X") {
+            return "randomOnline"
         } else {
             Write-Host "Opción no válida. Intente de nuevo." -ForegroundColor Red
             Pause
@@ -440,7 +445,7 @@ function Show-History {
 Test-MpvInstallation
 
 do {
-    $result = Show-Menu -pageSize 24
+    $result = Show-Menu -pageSize 12
 
     if ($result -is [int]) {
         # Reproducir estación seleccionada
