@@ -1,4 +1,4 @@
-# cmdRadio 2.0
+# cmdRadio 2.1
 
 Bienvenido a este proyecto GitHub que basícamente se trata de un script que utiliza el reproductor por comando MPV y un listado de ficheros .m3u para reproducir las emisoras por internet.
 
@@ -88,3 +88,10 @@ Se añaden nuevas funciones al script.
   - Agregar a favoritos.
   - Ver favoritos.
 - Nuevas funciones para reproducir radios online.
+
+## Mejoras versión 2.1
+
+Se añaden nuevas funciones al script.
+
+- Menú principal, añadida opcion para buscar string en ficheros locales.
+- Interfaz visual, se añade barra de progreso para busquedas largas.

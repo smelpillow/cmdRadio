@@ -17,6 +17,33 @@ if (-not (Test-Path $musicFolder)) {
 
 $m3uFiles = Get-ChildItem -Path $musicFolder -Filter "*.m3u" | Select-Object -ExpandProperty Name
 
+# Helper para mostrar barra/estado de progreso
+function Start-Progress {
+    param(
+        [string]$Activity,
+        [string]$Status = "Iniciando..."
+    )
+    Write-Progress -Activity $Activity -Status $Status -PercentComplete 0
+}
+
+function Update-Progress {
+    param(
+        [string]$Activity,
+        [string]$Status,
+        [int]$Percent
+    )
+    if ($Percent -lt 0) { $Percent = 0 }
+    if ($Percent -gt 100) { $Percent = 100 }
+    Write-Progress -Activity $Activity -Status $Status -PercentComplete $Percent
+}
+
+function Stop-Progress {
+    param(
+        [string]$Activity
+    )
+    Write-Progress -Activity $Activity -Completed
+}
+
 # Función para buscar Radio Online
 function Search-RadioOnline {
     param (
@@ -27,7 +54,13 @@ function Search-RadioOnline {
         "https://de2.api.radio-browser.info/json/stations/search?name=$searchTerm"
     )
     $response = $null
-    foreach ($apiUrl in $apiUrls) {
+    # Mostrar progreso mientras intentamos las APIs
+    $totalApis = $apiUrls.Count
+    Start-Progress -Activity "Búsqueda online" -Status "Consultando APIs..."
+    for ($i = 0; $i -lt $totalApis; $i++) {
+        $apiUrl = $apiUrls[$i]
+        $percent = [int](($i / $totalApis) * 100)
+        Update-Progress -Activity "Búsqueda online" -Status "Consultando $apiUrl" -Percent $percent
         try {
             $response = Invoke-RestMethod -Uri $apiUrl -Method Get -TimeoutSec 5
             if ($response -and $response.Count -ge 0) {
@@ -37,6 +70,7 @@ function Search-RadioOnline {
             Write-Host "No se pudo conectar con: $apiUrl" -ForegroundColor Yellow
         }
     }
+    Stop-Progress -Activity "Búsqueda online"
     if (-not $response) {
         Write-Host "Error: No se pudo obtener respuesta de ninguna API de Radio Browser." -ForegroundColor Red
         return
@@ -132,7 +166,9 @@ function Search-RadioOnline {
 function Get-RandomRadioOnline {
     $apiUrl = "https://de1.api.radio-browser.info/json/stations"
     try {
+        Start-Progress -Activity "Búsqueda online" -Status "Descargando lista de estaciones..."
         $response = Invoke-RestMethod -Uri $apiUrl -Method Get
+        Stop-Progress -Activity "Búsqueda online"
         if ($response.Count -eq 0) {
             Write-Host "No se encontraron estaciones disponibles en la API." -ForegroundColor Red
         } else {
@@ -148,6 +184,7 @@ function Get-RandomRadioOnline {
             }
         }
     } catch {
+        Stop-Progress -Activity "Búsqueda online"
         Write-Host "Error al consultar la API: $_" -ForegroundColor Red
     }
 }
@@ -175,7 +212,7 @@ function Test-MpvInstallation {
 # Función para mostrar el menú con paginación
 function Show-Menu {
     param (
-        [int]$pageSize = 15
+        [int]$pageSize = 12
     )
     $currentPage = 0
     $totalPages = [math]::Ceiling($m3uFiles.Count / $pageSize)
@@ -183,7 +220,7 @@ function Show-Menu {
     do {
         Clear-Host
         Write-Host "=============================================="
-        Write-Host "        cmdRadio 2.0 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
+        Write-Host "        cmdRadio 2.1 Menu (Página $($currentPage + 1) de $totalPages)" -ForegroundColor Cyan
         Write-Host "=============================================="
 
         # Mostrar estaciones de la página actual
@@ -197,6 +234,7 @@ function Show-Menu {
         Write-Host "W. Página siguiente" -ForegroundColor Blue
         Write-Host "E. Página anterior" -ForegroundColor Green
         Write-Host "R. Reproducir una estación al azar" -ForegroundColor Magenta
+        Write-Host "S. Buscar estación local" -ForegroundColor Yellow
         Write-Host "O. Buscar estación en línea" -ForegroundColor Cyan
         Write-Host "X. Reproducir estación aleatoria en línea" -ForegroundColor Magenta
         Write-Host "H. Historial de reproducción" -ForegroundColor DarkGreen
@@ -241,6 +279,8 @@ function Show-Menu {
             return "addFavorite"
         } elseif ($answer -eq "q" -or $answer -eq "Q") {
             return "quit"
+        } elseif ($answer -eq "s" -or $answer -eq "S") {
+            return "searchlocal"
         } elseif ($answer -eq "o" -or $answer -eq "O") {
             return "radioonline"
         } elseif ($answer -eq "x" -or $answer -eq "X") {
@@ -313,6 +353,64 @@ function Add-ToFavorites {
     }
 }
 
+# Función para buscar estaciones localmente
+function Search-LocalStations {
+    param (
+        [string]$searchTerm
+    )
+    
+    $results = @()
+    Write-Host "Buscando '$searchTerm' en las estaciones locales..." -ForegroundColor Cyan
+    
+    # Mostrar progreso mientras se recorren los archivos
+    $total = $m3uFiles.Count
+    Start-Progress -Activity "Búsqueda local" -Status "Preparando búsqueda..."
+    for ($idx = 0; $idx -lt $total; $idx++) {
+        $file = $m3uFiles[$idx]
+        $percent = [int](($idx / $total) * 100)
+        Update-Progress -Activity "Búsqueda local" -Status "Analizando $file ($($idx + 1)/$total)" -Percent $percent
+
+        if ($file -like "*$searchTerm*") {
+            $results += $file
+        }
+
+        # Buscar también dentro del contenido del archivo m3u
+        $filePath = Join-Path $musicFolder $file
+        if (Test-Path $filePath) {
+            # Leer con -Raw para archivos grandes podría ahorrar memoria; usamos Get-Content por compatibilidad
+            $content = Get-Content $filePath -ErrorAction SilentlyContinue
+            if ($content -and ($content | Where-Object { $_ -like "*$searchTerm*" })) {
+                if ($results -notcontains $file) {
+                    $results += $file
+                }
+            }
+        }
+    }
+    Stop-Progress -Activity "Búsqueda local"
+    
+    if ($results.Count -eq 0) {
+        Write-Host "No se encontraron estaciones que coincidan con '$searchTerm'" -ForegroundColor Yellow
+        return $null
+    }
+    
+    Write-Host "`nResultados encontrados:" -ForegroundColor Green
+    for ($i = 0; $i -lt $results.Count; $i++) {
+        Write-Host "$($i + 1). $($results[$i])"
+    }
+    
+    Write-Host "`nSeleccione un número para reproducir o presione Enter para volver al menú principal"
+    $selection = Read-Host "Selección"
+    
+    if ($selection -match '^\d+$') {
+        $index = [int]$selection - 1
+        if ($index -ge 0 -and $index -lt $results.Count) {
+            return Join-Path $musicFolder $results[$index]
+        }
+    }
+    
+    return $null
+}
+
 # Función para mostrar favoritos
 function Show-Favorites {
     # Actualizar la variable $favorites antes de mostrar
@@ -347,7 +445,7 @@ function Show-History {
 Test-MpvInstallation
 
 do {
-    $result = Show-Menu -pageSize 15
+    $result = Show-Menu -pageSize 12
 
     if ($result -is [int]) {
         # Reproducir estación seleccionada
@@ -405,6 +503,22 @@ do {
     } elseif ($result -eq "history") {
         # Mostrar historial de reproducción
         Show-History
+        Pause
+    } elseif ($result -eq "searchlocal") {
+        # Buscar estación local
+        $searchTerm = Read-Host "Ingrese el término de búsqueda"
+        $selectedFile = Search-LocalStations -searchTerm $searchTerm
+        if ($selectedFile) {
+            Write-Host "Reproduciendo: $selectedFile" -ForegroundColor Green
+            try {
+                mpv --shuffle --config-dir='C:\Github\cmdRadio\MpvConfig' $selectedFile
+                Write-Action "Reproduciendo archivo: $selectedFile"
+                Add-ToHistory -station $selectedFile
+            } catch {
+                Write-Host "Error al reproducir el archivo: $_" -ForegroundColor Red
+                Write-Action "Error al reproducir archivo: $selectedFile - $_"
+            }
+        }
         Pause
     } elseif ($result -eq "radioonline") {
         # Buscar estación en línea
